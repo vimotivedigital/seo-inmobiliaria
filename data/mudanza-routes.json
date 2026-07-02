@@ -1,0 +1,126 @@
+[
+  {
+    "slug": "madrid-barcelona",
+    "origin_slug": "madrid",
+    "destination_slug": "barcelona",
+    "distance_km": 620,
+    "cost_small": {
+      "value": 650,
+      "source": "Sirelo - Presupuestos y precios de mudanzas nacionales en España (2026), rango \"larga distancia (300+ km): 700€-3.000€\" y volumen \"6-10m³: 400€-600€\"",
+      "source_url": "https://sirelo.es/mudanzas-nacionales/mudanzas-precios/",
+      "last_updated": "2026-04-30",
+      "confidence": "estimado",
+      "nota": "Sirelo publica rangos por distancia y por volumen por separado, no una tabla cruzada por combinacion exacta de ambos. Este valor es una interpolacion propia dentro de los rangos publicados para un trayecto largo (620 km) y un piso pequeno, no una cifra que Sirelo de directamente para esta ruta."
+    },
+    "cost_medium": {
+      "value": 1400,
+      "source": "Sirelo - Presupuestos y precios de mudanzas nacionales en España (2026), rango \"larga distancia (300+ km): 700€-3.000€\" y volumen \"10-20m³: 600€-900€\"",
+      "source_url": "https://sirelo.es/mudanzas-nacionales/mudanzas-precios/",
+      "last_updated": "2026-04-30",
+      "confidence": "estimado",
+      "nota": "Interpolacion propia dentro de los rangos de Sirelo por distancia y volumen; no es una cifra publicada directamente por la fuente para esta ruta concreta."
+    },
+    "cost_large": {
+      "value": 2400,
+      "source": "Sirelo - Presupuestos y precios de mudanzas nacionales en España (2026), rango \"larga distancia (300+ km): 700€-3.000€\" y volumen \"+25m³: 1.200€-2.000€\"",
+      "source_url": "https://sirelo.es/mudanzas-nacionales/mudanzas-precios/",
+      "last_updated": "2026-04-30",
+      "confidence": "estimado",
+      "nota": "Interpolacion propia dentro de los rangos de Sirelo por distancia y volumen; no es una cifra publicada directamente por la fuente para esta ruta concreta."
+    },
+    "search_volume_tier": "alto"
+  },
+  {
+    "slug": "madrid-valencia",
+    "origin_slug": "madrid",
+    "destination_slug": "valencia",
+    "distance_km": 355,
+    "cost_small": {
+      "value": 650,
+      "source": "Sirelo - Presupuestos y precios de mudanzas nacionales en España (2026), rango \"larga distancia (300+ km): 700€-3.000€\" y volumen \"6-10m³: 400€-600€\"",
+      "source_url": "https://sirelo.es/mudanzas-nacionales/mudanzas-precios/",
+      "last_updated": "2026-04-30",
+      "confidence": "estimado",
+      "nota": "Interpolacion propia dentro de los rangos de Sirelo por distancia y volumen; no es una cifra publicada directamente por la fuente para esta ruta concreta."
+    },
+    "cost_medium": {
+      "value": 1100,
+      "source": "Sirelo - Presupuestos y precios de mudanzas nacionales en España (2026), rango \"larga distancia (300+ km): 700€-3.000€\" y volumen \"10-20m³: 600€-900€\"",
+      "source_url": "https://sirelo.es/mudanzas-nacionales/mudanzas-precios/",
+      "last_updated": "2026-04-30",
+      "confidence": "estimado",
+      "nota": "Interpolacion propia dentro de los rangos de Sirelo por distancia y volumen; no es una cifra publicada directamente por la fuente para esta ruta concreta."
+    },
+    "cost_large": {
+      "value": 1900,
+      "source": "Sirelo - Presupuestos y precios de mudanzas nacionales en España (2026), rango \"larga distancia (300+ km): 700€-3.000€\" y volumen \"+25m³: 1.200€-2.000€\"",
+      "source_url": "https://sirelo.es/mudanzas-nacionales/mudanzas-precios/",
+      "last_updated": "2026-04-30",
+      "confidence": "estimado",
+      "nota": "Interpolacion propia dentro de los rangos de Sirelo por distancia y volumen; no es una cifra publicada directamente por la fuente para esta ruta concreta."
+    },
+    "search_volume_tier": "medio"
+  },
+  {
+    "slug": "barcelona-valencia",
+    "origin_slug": "barcelona",
+    "destination_slug": "valencia",
+    "distance_km": 350,
+    "cost_small": {
+      "value": 650,
+      "source": "Sirelo - Presupuestos y precios de mudanzas nacionales en España (2026), rango \"larga distancia (300+ km): 700€-3.000€\" y volumen \"6-10m³: 400€-600€\"",
+      "source_url": "https://sirelo.es/mudanzas-nacionales/mudanzas-precios/",
+      "last_updated": "2026-04-30",
+      "confidence": "estimado",
+      "nota": "Interpolacion propia dentro de los rangos de Sirelo por distancia y volumen; no es una cifra publicada directamente por la fuente para esta ruta concreta."
+    },
+    "cost_medium": {
+      "value": 1100,
+      "source": "Sirelo - Presupuestos y precios de mudanzas nacionales en España (2026), rango \"larga distancia (300+ km): 700€-3.000€\" y volumen \"10-20m³: 600€-900€\"",
+      "source_url": "https://sirelo.es/mudanzas-nacionales/mudanzas-precios/",
+      "last_updated": "2026-04-30",
+      "confidence": "estimado",
+      "nota": "Interpolacion propia dentro de los rangos de Sirelo por distancia y volumen; no es una cifra publicada directamente por la fuente para esta ruta concreta."
+    },
+    "cost_large": {
+      "value": 1900,
+      "source": "Sirelo - Presupuestos y precios de mudanzas nacionales en España (2026), rango \"larga distancia (300+ km): 700€-3.000€\" y volumen \"+25m³: 1.200€-2.000€\"",
+      "source_url": "https://sirelo.es/mudanzas-nacionales/mudanzas-precios/",
+      "last_updated": "2026-04-30",
+      "confidence": "estimado",
+      "nota": "Interpolacion propia dentro de los rangos de Sirelo por distancia y volumen; no es una cifra publicada directamente por la fuente para esta ruta concreta."
+    },
+    "search_volume_tier": "medio"
+  },
+  {
+    "slug": "sevilla-malaga",
+    "origin_slug": "sevilla",
+    "destination_slug": "malaga",
+    "distance_km": 210,
+    "cost_small": {
+      "value": 450,
+      "source": "Sirelo - Presupuestos y precios de mudanzas nacionales en España (2026), rango \"entre provincias (50-300 km): 600€-2.000€\" y volumen \"6-10m³: 400€-600€\"",
+      "source_url": "https://sirelo.es/mudanzas-nacionales/mudanzas-precios/",
+      "last_updated": "2026-04-30",
+      "confidence": "estimado",
+      "nota": "Interpolacion propia dentro de los rangos de Sirelo por distancia y volumen; no es una cifra publicada directamente por la fuente para esta ruta concreta."
+    },
+    "cost_medium": {
+      "value": 750,
+      "source": "Sirelo - Presupuestos y precios de mudanzas nacionales en España (2026), rango \"entre provincias (50-300 km): 600€-2.000€\" y volumen \"10-20m³: 600€-900€\"",
+      "source_url": "https://sirelo.es/mudanzas-nacionales/mudanzas-precios/",
+      "last_updated": "2026-04-30",
+      "confidence": "estimado",
+      "nota": "Interpolacion propia dentro de los rangos de Sirelo por distancia y volumen; no es una cifra publicada directamente por la fuente para esta ruta concreta."
+    },
+    "cost_large": {
+      "value": 1300,
+      "source": "Sirelo - Presupuestos y precios de mudanzas nacionales en España (2026), rango \"entre provincias (50-300 km): 600€-2.000€\" y volumen \"20-25m³: 900€-1.300€\"",
+      "source_url": "https://sirelo.es/mudanzas-nacionales/mudanzas-precios/",
+      "last_updated": "2026-04-30",
+      "confidence": "estimado",
+      "nota": "Interpolacion propia dentro de los rangos de Sirelo por distancia y volumen; no es una cifra publicada directamente por la fuente para esta ruta concreta."
+    },
+    "search_volume_tier": "bajo"
+  }
+]

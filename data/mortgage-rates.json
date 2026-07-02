@@ -1,0 +1,47 @@
+{
+  "avg_fixed_rate": {
+    "value": 2.71,
+    "source": "Punto medio del rango de mejores ofertas de tipo fijo (Rastreator, HelpMyCash) -- ver data/tipos-interes.json#tipo_fijo_rango para el rango completo y las fuentes",
+    "last_updated": "2026-07-01",
+    "confidence": "estimado",
+    "nota": "No existe una media oficial del tipo fijo hipotecario. Este valor es el punto medio del rango 2,00%-3,42% de mejores ofertas publicadas por comparadores en junio-julio de 2026, no una media ponderada por volumen de contratacion real.",
+    "fuentes": [
+      {
+        "nombre": "Rastreator - Mejores hipotecas fijas de junio de 2026",
+        "source_url": "https://www.rastreator.com/hipotecas/guias/mejores-hipotecas-tipo-fijo",
+        "consultado": "2026-07-01"
+      },
+      {
+        "nombre": "HelpMyCash - Mejores hipotecas fijas, mixtas y variables: julio 2026",
+        "source_url": "https://www.helpmycash.com/mejores-hipotecas/",
+        "consultado": "2026-07-01"
+      }
+    ]
+  },
+  "avg_variable_rate": {
+    "value": 3.35,
+    "source": "Euribor 12m (Banco de España, real) + diferencial medio ofertado (0,55 p.p., estimado) -- ver data/tipos-interes.json",
+    "last_updated": "2026-07-01",
+    "confidence": "estimado",
+    "nota": "El euribor de partida es un dato oficial (ver euribor_12m en data/tipos-interes.json), pero el diferencial que se le suma no tiene fuente oficial unica: es el punto medio de los mejores diferenciales anunciados por comparadores, por lo que el resultado combinado se marca como estimado en su conjunto.",
+    "fuentes": [
+      {
+        "nombre": "HelpMyCash - Mejores hipotecas variables",
+        "source_url": "https://www.helpmycash.com/hipotecas/hipoteca-variable/",
+        "consultado": "2026-07-01"
+      },
+      {
+        "nombre": "Rastreator - Mejores hipotecas variables",
+        "source_url": "https://www.rastreator.com/hipotecas/guias/mejores-hipotecas",
+        "consultado": "2026-07-01"
+      }
+    ]
+  },
+  "avg_ltv": {
+    "value": 78,
+    "source": "Estimacion sectorial sobre concesion a primera vivienda habitual",
+    "last_updated": "2026-05-01",
+    "confidence": "estimado",
+    "nota": "Ningun comparador ni institucion publica una media agregada y verificable de LTV concedido; se mantiene como estimacion sectorial orientativa sin fuente citable concreta hasta encontrar una."
+  }
+}

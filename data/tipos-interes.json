@@ -1,0 +1,61 @@
+{
+  "euribor_12m": {
+    "value": 2.798,
+    "source": "Banco de España - Boletín Estadístico cap. 19, tabla mensual 'Tipos de interés: euríbor' (serie BE_19_1.5, 'Euríbor a 12 meses')",
+    "source_url": "https://www.bde.es/webbe/es/estadisticas/compartido/datos/csv/be1901.csv",
+    "last_updated": "2026-06-30",
+    "confidence": "real",
+    "nota": "Ultimo mes cerrado de la serie mensual oficial del Banco de España en el momento de la actualizacion (jun 2026). Actualizado automaticamente por scripts/update-euribor.ts.",
+    "fuentes": [
+      {
+        "nombre": "Banco de España - Nota de prensa \"El euríbor se sitúa en el 2,804% en mayo\"",
+        "source_url": "https://www.bde.es/wbe/en/noticias-eventos/actualidad-banco-espana/notas-banco-espana/el-euribor-se-situa-en-el-2804-en-mayo-0723-puntos-mas-que-hace-un-ano.html",
+        "consultado": "2026-07-01"
+      },
+      {
+        "nombre": "BOE - Resolución de la DGT Catastro/Banco de España con el euríbor de referencia de abril 2026",
+        "source_url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-9792",
+        "consultado": "2026-07-01"
+      }
+    ]
+  },
+  "diferencial_hipotecario_variable": {
+    "value": 0.55,
+    "source": "Comparadores de hipotecas (HelpMyCash, Rastreator) - mejores diferenciales publicados, no una media estadistica de mercado",
+    "last_updated": "2026-07-01",
+    "confidence": "estimado",
+    "nota": "El Banco de España no publica una media agregada de diferenciales bancarios ofertados. Este valor es el punto medio del rango de MEJORES diferenciales anunciados por comparadores privados en sus rankings de julio 2026 (0,49%-0,60%), no una media estadistica de todo el mercado -- las ofertas no bonificadas o de bancos fuera de ranking suelen tener diferenciales mas altos.",
+    "fuentes": [
+      {
+        "nombre": "HelpMyCash - Mejores hipotecas variables (\"con el euríbor en el 2,80% y los mejores diferenciales en el 0,49%-0,50%, una hipoteca variable competitiva aplica un interes de en torno al 3,30%\")",
+        "source_url": "https://www.helpmycash.com/hipotecas/hipoteca-variable/",
+        "consultado": "2026-07-01"
+      },
+      {
+        "nombre": "Rastreator - Mejores hipotecas variables (Kutxabank 1,55% TIN primer año; diferenciales de referencia tras el periodo bonificado)",
+        "source_url": "https://www.rastreator.com/hipotecas/guias/mejores-hipotecas",
+        "consultado": "2026-07-01"
+      }
+    ]
+  },
+  "tipo_fijo_rango": {
+    "value_low": 2,
+    "value_high": 3.42,
+    "source": "Comparadores de hipotecas (Rastreator, HelpMyCash) - rango de mejores ofertas de tipo fijo publicadas",
+    "last_updated": "2026-07-01",
+    "confidence": "estimado",
+    "nota": "No existe una media oficial del tipo fijo hipotecario. Este rango recoge las mejores ofertas de bancos con actividad en Espana publicadas en rankings de comparadores en junio-julio de 2026 (desde Unicaja al 2,00% TIN hasta Bankinter al 3,42% TAE bonificada), no una media ponderada por volumen de contratacion.",
+    "fuentes": [
+      {
+        "nombre": "Rastreator - Mejores hipotecas fijas de junio de 2026",
+        "source_url": "https://www.rastreator.com/hipotecas/guias/mejores-hipotecas-tipo-fijo",
+        "consultado": "2026-07-01"
+      },
+      {
+        "nombre": "HelpMyCash - Mejores hipotecas fijas, mixtas y variables: julio 2026",
+        "source_url": "https://www.helpmycash.com/mejores-hipotecas/",
+        "consultado": "2026-07-01"
+      }
+    ]
+  }
+}

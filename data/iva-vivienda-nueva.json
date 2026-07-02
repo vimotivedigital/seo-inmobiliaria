@@ -1,0 +1,16 @@
+{
+  "general": {
+    "value": 10,
+    "source": "Ley 37/1992 del IVA, art. 91.Uno.1.7º (entrega de edificaciones aptas para su utilizacion como viviendas)",
+    "last_updated": "2026-01-01",
+    "confidence": "real",
+    "nota": "Tipo unico nacional, no varia por comunidad autonoma. Incluye hasta 2 plazas de garaje y anexos transmitidos conjuntamente con la vivienda."
+  },
+  "vpo": {
+    "value": 4,
+    "source": "Ley 37/1992 del IVA, art. 91.Dos.1.6º (tipo superreducido para vivienda de proteccion oficial de regimen especial o de promocion publica)",
+    "last_updated": "2026-01-01",
+    "confidence": "real",
+    "nota": "Aplica solo a determinadas categorias de vivienda de proteccion oficial; la mayoria de compras de obra nueva tributan al tipo general del 10%."
+  }
+}

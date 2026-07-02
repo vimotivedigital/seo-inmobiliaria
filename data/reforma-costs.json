@@ -1,0 +1,158 @@
+[
+  {
+    "city_slug": "madrid",
+    "low": {
+      "value": 450,
+      "source": "Habitissimo - '¿Cuánto cuesta una reforma integral? Precio m² y presupuestos' (rango calidad basica/media-baja)",
+      "source_url": "https://www.habitissimo.es/presupuestos/reforma-integral-vivienda",
+      "last_updated": "2025-02-04",
+      "confidence": "estimado",
+      "nota": "Rango nacional (400-600 €/m²) de Habitissimo, basado en presupuestos reales solicitados por usuarios (273.184 solicitudes analizadas); no esta desglosado por ciudad, por lo que se aplica el mismo valor nacional a todas las ciudades de este dataset."
+    },
+    "medium": {
+      "value": 750,
+      "source": "Habitissimo - '¿Cuánto cuesta una reforma integral? Precio m² y presupuestos' (precio medio general)",
+      "source_url": "https://www.habitissimo.es/presupuestos/reforma-integral-vivienda",
+      "last_updated": "2025-02-04",
+      "confidence": "estimado",
+      "nota": "Precio medio nacional declarado por Habitissimo para una reforma integral tipo; no esta desglosado por ciudad."
+    },
+    "high": {
+      "value": 1000,
+      "source": "Habitissimo - '¿Cuánto cuesta una reforma integral? Precio m² y presupuestos' (acabados de alta gama/lujo)",
+      "source_url": "https://www.habitissimo.es/presupuestos/reforma-integral-vivienda",
+      "last_updated": "2025-02-04",
+      "confidence": "estimado",
+      "nota": "Rango nacional (800-1.200 €/m²) de Habitissimo para acabados de gama alta; no esta desglosado por ciudad."
+    },
+    "total_project_range": {
+      "value": { "low": 25900, "high": 40000 },
+      "source": "Habitissimo - presupuesto total tipico de una reforma integral en Madrid (dato especifico de esta ciudad, no un calculo por m2)",
+      "source_url": "https://www.habitissimo.es/presupuestos/reforma-integral-vivienda",
+      "last_updated": "2025-02-04",
+      "confidence": "estimado"
+    }
+  },
+  {
+    "city_slug": "barcelona",
+    "low": {
+      "value": 450,
+      "source": "Habitissimo - '¿Cuánto cuesta una reforma integral? Precio m² y presupuestos' (rango calidad basica/media-baja)",
+      "source_url": "https://www.habitissimo.es/presupuestos/reforma-integral-vivienda",
+      "last_updated": "2025-02-04",
+      "confidence": "estimado",
+      "nota": "Rango nacional (400-600 €/m²) de Habitissimo; no esta desglosado por ciudad."
+    },
+    "medium": {
+      "value": 750,
+      "source": "Habitissimo - '¿Cuánto cuesta una reforma integral? Precio m² y presupuestos' (precio medio general)",
+      "source_url": "https://www.habitissimo.es/presupuestos/reforma-integral-vivienda",
+      "last_updated": "2025-02-04",
+      "confidence": "estimado",
+      "nota": "Precio medio nacional; no esta desglosado por ciudad."
+    },
+    "high": {
+      "value": 1000,
+      "source": "Habitissimo - '¿Cuánto cuesta una reforma integral? Precio m² y presupuestos' (acabados de alta gama/lujo)",
+      "source_url": "https://www.habitissimo.es/presupuestos/reforma-integral-vivienda",
+      "last_updated": "2025-02-04",
+      "confidence": "estimado",
+      "nota": "Rango nacional (800-1.200 €/m²); no esta desglosado por ciudad."
+    },
+    "total_project_range": {
+      "value": { "low": 25700, "high": 39000 },
+      "source": "Habitissimo - presupuesto total tipico de una reforma integral en Barcelona (dato especifico de esta ciudad, no un calculo por m2)",
+      "source_url": "https://www.habitissimo.es/presupuestos/reforma-integral-vivienda",
+      "last_updated": "2025-02-04",
+      "confidence": "estimado"
+    }
+  },
+  {
+    "city_slug": "valencia",
+    "low": {
+      "value": 450,
+      "source": "Habitissimo - '¿Cuánto cuesta una reforma integral? Precio m² y presupuestos' (rango calidad basica/media-baja)",
+      "source_url": "https://www.habitissimo.es/presupuestos/reforma-integral-vivienda",
+      "last_updated": "2025-02-04",
+      "confidence": "estimado",
+      "nota": "Rango nacional (400-600 €/m²) de Habitissimo; no esta desglosado por ciudad."
+    },
+    "medium": {
+      "value": 750,
+      "source": "Habitissimo - '¿Cuánto cuesta una reforma integral? Precio m² y presupuestos' (precio medio general)",
+      "source_url": "https://www.habitissimo.es/presupuestos/reforma-integral-vivienda",
+      "last_updated": "2025-02-04",
+      "confidence": "estimado",
+      "nota": "Precio medio nacional; no esta desglosado por ciudad."
+    },
+    "high": {
+      "value": 1000,
+      "source": "Habitissimo - '¿Cuánto cuesta una reforma integral? Precio m² y presupuestos' (acabados de alta gama/lujo)",
+      "source_url": "https://www.habitissimo.es/presupuestos/reforma-integral-vivienda",
+      "last_updated": "2025-02-04",
+      "confidence": "estimado",
+      "nota": "Rango nacional (800-1.200 €/m²); no esta desglosado por ciudad."
+    },
+    "total_project_range": {
+      "value": { "low": 25100, "high": 38250 },
+      "source": "Habitissimo - presupuesto total tipico de una reforma integral en Valencia (dato especifico de esta ciudad, no un calculo por m2)",
+      "source_url": "https://www.habitissimo.es/presupuestos/reforma-integral-vivienda",
+      "last_updated": "2025-02-04",
+      "confidence": "estimado"
+    }
+  },
+  {
+    "city_slug": "sevilla",
+    "low": {
+      "value": 450,
+      "source": "Habitissimo - '¿Cuánto cuesta una reforma integral? Precio m² y presupuestos' (rango calidad basica/media-baja)",
+      "source_url": "https://www.habitissimo.es/presupuestos/reforma-integral-vivienda",
+      "last_updated": "2025-02-04",
+      "confidence": "estimado",
+      "nota": "Rango nacional (400-600 €/m²) de Habitissimo; no esta desglosado por ciudad ni Sevilla en particular."
+    },
+    "medium": {
+      "value": 750,
+      "source": "Habitissimo - '¿Cuánto cuesta una reforma integral? Precio m² y presupuestos' (precio medio general)",
+      "source_url": "https://www.habitissimo.es/presupuestos/reforma-integral-vivienda",
+      "last_updated": "2025-02-04",
+      "confidence": "estimado",
+      "nota": "Precio medio nacional; no esta desglosado por ciudad."
+    },
+    "high": {
+      "value": 1000,
+      "source": "Habitissimo - '¿Cuánto cuesta una reforma integral? Precio m² y presupuestos' (acabados de alta gama/lujo)",
+      "source_url": "https://www.habitissimo.es/presupuestos/reforma-integral-vivienda",
+      "last_updated": "2025-02-04",
+      "confidence": "estimado",
+      "nota": "Rango nacional (800-1.200 €/m²); no esta desglosado por ciudad."
+    }
+  },
+  {
+    "city_slug": "malaga",
+    "low": {
+      "value": 450,
+      "source": "Habitissimo - '¿Cuánto cuesta una reforma integral? Precio m² y presupuestos' (rango calidad basica/media-baja)",
+      "source_url": "https://www.habitissimo.es/presupuestos/reforma-integral-vivienda",
+      "last_updated": "2025-02-04",
+      "confidence": "estimado",
+      "nota": "Rango nacional (400-600 €/m²) de Habitissimo; no esta desglosado por ciudad ni Malaga en particular."
+    },
+    "medium": {
+      "value": 750,
+      "source": "Habitissimo - '¿Cuánto cuesta una reforma integral? Precio m² y presupuestos' (precio medio general)",
+      "source_url": "https://www.habitissimo.es/presupuestos/reforma-integral-vivienda",
+      "last_updated": "2025-02-04",
+      "confidence": "estimado",
+      "nota": "Precio medio nacional; no esta desglosado por ciudad."
+    },
+    "high": {
+      "value": 1000,
+      "source": "Habitissimo - '¿Cuánto cuesta una reforma integral? Precio m² y presupuestos' (acabados de alta gama/lujo)",
+      "source_url": "https://www.habitissimo.es/presupuestos/reforma-integral-vivienda",
+      "last_updated": "2025-02-04",
+      "confidence": "estimado",
+      "nota": "Rango nacional (800-1.200 €/m²); no esta desglosado por ciudad."
+    }
+  }
+]

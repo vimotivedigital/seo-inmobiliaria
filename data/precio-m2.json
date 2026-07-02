@@ -1,0 +1,69 @@
+[
+  {
+    "city_slug": "madrid",
+    "price_per_sqm": {
+      "value": 6631,
+      "source": "Fotocasa - Índice Inmobiliario, precio de venta Madrid Capital",
+      "source_url": "https://www.fotocasa.es/indice-precio-vivienda/madrid-capital/todas-las-zonas",
+      "last_updated": "2026-06-30",
+      "confidence": "real",
+      "next_review_due": "2026-09-30"
+    }
+  },
+  {
+    "city_slug": "barcelona",
+    "price_per_sqm": {
+      "value": 5368,
+      "source": "Fotocasa - Índice Inmobiliario, precio de venta Barcelona Capital",
+      "source_url": "https://www.fotocasa.es/indice-precio-vivienda/barcelona-capital/todas-las-zonas",
+      "last_updated": "2026-06-30",
+      "confidence": "real",
+      "next_review_due": "2026-09-30"
+    }
+  },
+  {
+    "city_slug": "valencia",
+    "price_per_sqm": {
+      "value": 3637,
+      "source": "Fotocasa - Índice Inmobiliario, precio de venta Valencia Capital",
+      "source_url": "https://www.fotocasa.es/indice-precio-vivienda/valencia-capital/todas-las-zonas",
+      "last_updated": "2026-06-30",
+      "confidence": "real",
+      "next_review_due": "2026-09-30"
+    }
+  },
+  {
+    "city_slug": "sevilla",
+    "price_per_sqm": {
+      "value": 2933,
+      "source": "Fotocasa - Índice Inmobiliario, precio de venta Sevilla Capital",
+      "source_url": "https://www.fotocasa.es/indice-precio-vivienda/sevilla-capital/todas-las-zonas",
+      "last_updated": "2026-06-30",
+      "confidence": "real",
+      "next_review_due": "2026-09-30"
+    }
+  },
+  {
+    "city_slug": "malaga",
+    "price_per_sqm": {
+      "value": 4338,
+      "source": "Fotocasa - Índice Inmobiliario, precio de venta Málaga Capital",
+      "source_url": "https://www.fotocasa.es/indice-precio-vivienda/malaga-capital/todas-las-zonas",
+      "last_updated": "2026-06-30",
+      "confidence": "real",
+      "next_review_due": "2026-09-30"
+    }
+  },
+  {
+    "city_slug": "teruel",
+    "price_per_sqm": {
+      "value": 1986,
+      "source": "Fotocasa - Índice Inmobiliario, precio de venta Teruel Capital",
+      "source_url": "https://www.fotocasa.es/indice-precio-vivienda/teruel-capital/todas-las-zonas",
+      "last_updated": "2026-06-30",
+      "confidence": "estimado",
+      "nota": "La propia pagina de Fotocasa advierte que Teruel capital 'no dispone de suficientes datos para mostrar el precio de forma precisa'. Coherente con el tier de volumen de busqueda 'sin_datos' de esta ciudad en el dataset (ver data/cities.json).",
+      "next_review_due": "2026-09-30"
+    }
+  }
+]

@@ -1,0 +1,68 @@
+[
+  {
+    "slug": "madrid",
+    "name": "Madrid",
+    "province": "Madrid",
+    "ccaa": "Comunidad de Madrid",
+    "population": 3332035,
+    "rent_per_sqm": { "value": 17.8, "source": "Idealista - Informe de precios (media anuncios activos)", "last_updated": "2026-06-01", "confidence": "estimado" },
+    "price_yoy_change": { "value": 8.1, "source": "Idealista - Informe de precios (variacion interanual)", "last_updated": "2026-06-01", "confidence": "estimado" },
+    "search_volume_tier": "alto",
+    "local_context": "Madrid capital encadena varios anios de subidas por encima de la media nacional, con especial tension en distritos centrales (Centro, Chamberi, Salamanca) frente a la periferia sur, donde el precio por m2 puede ser hasta un 40% mas bajo."
+  },
+  {
+    "slug": "barcelona",
+    "name": "Barcelona",
+    "province": "Barcelona",
+    "ccaa": "Cataluña",
+    "population": 1655956,
+    "rent_per_sqm": { "value": 19.2, "source": "Idealista - Informe de precios (media anuncios activos)", "last_updated": "2026-06-01", "confidence": "estimado" },
+    "price_yoy_change": { "value": 5.4, "source": "Idealista - Informe de precios (variacion interanual)", "last_updated": "2026-06-01", "confidence": "estimado" },
+    "search_volume_tier": "alto",
+    "local_context": "Barcelona es la unica gran capital espanola con zonas declaradas de mercado tensionado bajo la Ley de Vivienda, lo que ha limitado la subida de alquileres en determinados barrios frente a la venta, que sigue una trayectoria alcista mas moderada que Madrid."
+  },
+  {
+    "slug": "valencia",
+    "name": "Valencia",
+    "province": "Valencia",
+    "ccaa": "Comunidad Valenciana",
+    "population": 807693,
+    "rent_per_sqm": { "value": 12.1, "source": "Idealista - Informe de precios (media anuncios activos)", "last_updated": "2026-06-01", "confidence": "estimado" },
+    "price_yoy_change": { "value": 15.6, "source": "Idealista - Informe de precios (variacion interanual)", "last_updated": "2026-06-01", "confidence": "estimado" },
+    "search_volume_tier": "alto",
+    "local_context": "Valencia es la capital espanola con mayor crecimiento interanual de precio de venta, impulsada por la llegada de compradores de Madrid y Barcelona en busca de precios mas bajos; el diferencial con esas dos ciudades sigue siendo superior al 40%."
+  },
+  {
+    "slug": "sevilla",
+    "name": "Sevilla",
+    "province": "Sevilla",
+    "ccaa": "Andalucía",
+    "population": 684025,
+    "rent_per_sqm": { "value": 11.4, "source": "Idealista - Informe de precios (media anuncios activos)", "last_updated": "2026-06-01", "confidence": "estimado" },
+    "price_yoy_change": { "value": 10.3, "source": "Idealista - Informe de precios (variacion interanual)", "last_updated": "2026-06-01", "confidence": "estimado" },
+    "search_volume_tier": "medio",
+    "local_context": "El centro historico de Sevilla (Casco Antiguo, Triana) concentra la demanda turistica y de inversion en alquiler vacacional, lo que ha tensionado los precios de compra por encima de la media andaluza."
+  },
+  {
+    "slug": "malaga",
+    "name": "Malaga",
+    "province": "Malaga",
+    "ccaa": "Andalucía",
+    "population": 578460,
+    "rent_per_sqm": { "value": 13.9, "source": "Idealista - Informe de precios (media anuncios activos)", "last_updated": "2026-06-01", "confidence": "estimado" },
+    "price_yoy_change": { "value": 12.7, "source": "Idealista - Informe de precios (variacion interanual)", "last_updated": "2026-06-01", "confidence": "estimado" },
+    "search_volume_tier": "alto",
+    "local_context": "Malaga capital se ha visto muy afectada por la demanda de nomadas digitales y compradores extranjeros, con el distrito Centro superando ya el precio medio de barrios equivalentes en Sevilla o Valencia."
+  },
+  {
+    "slug": "teruel",
+    "name": "Teruel",
+    "province": "Teruel",
+    "ccaa": "Aragón",
+    "population": 35251,
+    "rent_per_sqm": { "value": 6.1, "source": "Idealista - Informe de precios (media anuncios activos)", "last_updated": "2026-06-01", "confidence": "estimado" },
+    "price_yoy_change": { "value": 1.8, "source": "Idealista - Informe de precios (variacion interanual)", "last_updated": "2026-06-01", "confidence": "estimado" },
+    "search_volume_tier": "sin_datos",
+    "local_context": "Teruel capital mantiene uno de los precios por m2 mas bajos de Espana, sin apenas tension de demanda inversora."
+  }
+]

@@ -1,0 +1,176 @@
+[
+  {
+    "ccaa": "Comunidad de Madrid",
+    "tipo": "fijo",
+    "tramos": [{ "hasta": null, "porcentaje": 6 }],
+    "ajd_general": 0.75,
+    "reducciones": [
+      {
+        "colectivo": "Familia numerosa (vivienda habitual)",
+        "porcentaje": 4,
+        "condiciones": "Vivienda habitual adquirida por una familia numerosa."
+      },
+      {
+        "colectivo": "Cualquier comprador, vivienda de valor ≤250.000€",
+        "porcentaje": 5.4,
+        "condiciones": "Descuento del 10% sobre la cuota resultante del tipo general (6%) para viviendas de hasta 250.000€. Tipo efectivo tras el descuento: 5,4%."
+      },
+      {
+        "colectivo": "Menores de 35 años en municipios de menos de 2.500 habitantes",
+        "porcentaje": 0,
+        "condiciones": "Exención del 100% para la compra de vivienda habitual, en vigor desde el 29/11/2024."
+      }
+    ],
+    "source": "Comunidad de Madrid - Impuesto sobre Transmisiones Patrimoniales y Actos Jurídicos Documentados (tributos cedidos)",
+    "source_url": "https://www.comunidad.madrid/atencion-contribuyente/transmisiones-patrimoniales-onerosas",
+    "last_updated": "2026-04-23",
+    "confidence": "real",
+    "notes": "Fecha de actualizacion tomada de la propia pagina oficial de la Comunidad de Madrid (revisada 23/04/2026)."
+  },
+  {
+    "ccaa": "Cataluña",
+    "tipo": "progresivo",
+    "tramos": [
+      { "hasta": 600000, "porcentaje": 10 },
+      { "hasta": 900000, "porcentaje": 11 },
+      { "hasta": 1500000, "porcentaje": 12 },
+      { "hasta": null, "porcentaje": 13 }
+    ],
+    "ajd_general": 1.5,
+    "reducciones": [
+      {
+        "colectivo": "Compradores de hasta 35 años (vivienda habitual)",
+        "porcentaje": 5,
+        "condiciones": "Vivienda habitual, edad limite elevada de 32 a 35 anios desde el 27/06/2025."
+      },
+      {
+        "colectivo": "Familia numerosa (vivienda habitual)",
+        "porcentaje": 5,
+        "condiciones": "Vivienda habitual adquirida por una familia numerosa."
+      },
+      {
+        "colectivo": "Discapacidad ≥65% (vivienda habitual)",
+        "porcentaje": 5,
+        "condiciones": "Grado de discapacidad igual o superior al 65%, vivienda habitual."
+      },
+      {
+        "colectivo": "Víctimas de violencia doméstica (vivienda habitual)",
+        "porcentaje": 5,
+        "condiciones": "Acreditacion de la condicion de victima de violencia domestica."
+      },
+      {
+        "colectivo": "Vivienda de protección oficial (VPO)",
+        "porcentaje": 7,
+        "condiciones": "Vivienda calificada oficialmente como de proteccion oficial."
+      },
+      {
+        "colectivo": "Gran tenedor (10+ viviendas o 1.500+ m² construidos)",
+        "porcentaje": 20,
+        "condiciones": "El adquirente esta clasificado como gran tenedor segun la normativa catalana."
+      }
+    ],
+    "source": "Agència Tributària de Catalunya - ITP, tarifes i tipus (escala progresiva vigente desde el 27/06/2025)",
+    "source_url": "https://atc.gencat.cat/es/tributs/itpajd/tpo/tarifes-tipus/",
+    "last_updated": "2025-06-27",
+    "confidence": "real",
+    "notes": "La pagina oficial no muestra una fecha de 'ultima revision' explicita; se usa como last_updated la fecha de entrada en vigor de la escala progresiva (27/06/2025) segun la propia norma."
+  },
+  {
+    "ccaa": "Comunidad Valenciana",
+    "tipo": "progresivo",
+    "tramos": [
+      { "hasta": 1000000, "porcentaje": 9 },
+      { "hasta": null, "porcentaje": 11 }
+    ],
+    "ajd_general": 1.4,
+    "reducciones": [
+      {
+        "colectivo": "Menores de 35 años, primera vivienda habitual ≤180.000€",
+        "porcentaje": 8,
+        "condiciones": "Primera vivienda habitual de valor igual o inferior a 180.000€."
+      },
+      {
+        "colectivo": "Familia numerosa (vivienda habitual ≤180.000€)",
+        "porcentaje": 4,
+        "condiciones": "Vivienda habitual de valor igual o inferior a 180.000€."
+      },
+      {
+        "colectivo": "Discapacidad ≥65% (vivienda habitual ≤180.000€)",
+        "porcentaje": 4,
+        "condiciones": "Grado de discapacidad igual o superior al 65%, vivienda habitual de hasta 180.000€."
+      },
+      {
+        "colectivo": "Vivienda de protección oficial (VPO)",
+        "porcentaje": 8,
+        "condiciones": "Vivienda calificada oficialmente como de proteccion oficial, primera vivienda habitual."
+      }
+    ],
+    "source": "Ley 5/2025, de 30 de mayo, de la Generalitat Valenciana (DOGV 31/05/2025; BOE-A-2025-11959), tipo general vigente desde el 01/06/2026",
+    "source_url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2025-11959",
+    "last_updated": "2026-06-01",
+    "confidence": "real",
+    "notes": "El tipo general (9%/11%) y el AJD (1,4%) estan confirmados de forma cruzada en multiples fuentes especializadas (guiafiscal.es, casasdelmediterraneo.com) que citan la misma Ley 5/2025; no se pudo renderizar el articulado exacto de la ley en el BOE durante esta revision, por lo que los importes/condiciones de las reducciones (columna 'reducciones') deberian cotejarse contra el texto legal antes de un uso critico. La pagina oficial hisenda.gva.es/es/web/tributos/beneficis-fiscals-2026 muestra la tabla de reducciones pero no llego a confirmarse de forma directa el tramo general durante esta revision."
+  },
+  {
+    "ccaa": "Andalucía",
+    "tipo": "fijo",
+    "tramos": [{ "hasta": null, "porcentaje": 7 }],
+    "ajd_general": 1.2,
+    "reducciones": [
+      {
+        "colectivo": "Vivienda habitual de cualquier comprador, valor ≤150.000€",
+        "porcentaje": 6,
+        "condiciones": "Tipo reducido general para vivienda habitual de hasta 150.000€, independientemente del colectivo."
+      },
+      {
+        "colectivo": "Menores de 35 años, discapacidad ≥33%, familia numerosa, víctimas de violencia de género/terrorismo, municipios en riesgo de despoblación",
+        "porcentaje": 3.5,
+        "condiciones": "Vivienda habitual, con topes de valor entre 150.000€ y 250.000€ segun el colectivo concreto."
+      }
+    ],
+    "source": "Agencia Tributaria de Andalucía - Impuestos cedidos, Transmisiones Patrimoniales (tipo general en vigor desde el 28/04/2021)",
+    "source_url": "https://www.juntadeandalucia.es/organismos/economiahaciendayfondoseuropeos/areas/tributos-juego/tributos/paginas/impuestos-cedidos-transmisiones.html",
+    "last_updated": "2025-12-15",
+    "confidence": "real",
+    "notes": "last_updated corresponde a la resolucion/actualizacion de la pagina oficial referenciada mas reciente encontrada (15/12/2025); el tipo general del 7% esta en vigor sin cambios desde el 28/04/2021."
+  },
+  {
+    "ccaa": "Aragón",
+    "tipo": "progresivo",
+    "tramos": [
+      { "hasta": 400000, "porcentaje": 8 },
+      { "hasta": 450000, "porcentaje": 8.5 },
+      { "hasta": 500000, "porcentaje": 9 },
+      { "hasta": 750000, "porcentaje": 9.5 },
+      { "hasta": null, "porcentaje": 10 }
+    ],
+    "ajd_general": 1.5,
+    "reducciones": [
+      {
+        "colectivo": "Menores de 35 años, discapacidad ≥65%, víctimas de violencia de género (vivienda ≤~100.000€)",
+        "porcentaje": 7,
+        "condiciones": "Reduccion del 12,5% sobre la cuota calculada al tipo del primer tramo (8%); tipo efectivo resultante 7%. Tope de valor orientativo en torno a 100.000€."
+      },
+      {
+        "colectivo": "Familia numerosa",
+        "porcentaje": 4,
+        "condiciones": "Reduccion del 50% sobre la cuota calculada al tipo del primer tramo (8%); tipo efectivo resultante 4%."
+      },
+      {
+        "colectivo": "Vivienda en zonas rurales",
+        "porcentaje": 3.2,
+        "condiciones": "Reduccion del 60% sobre la cuota calculada al tipo del primer tramo (8%); tipo efectivo resultante 3,2%."
+      },
+      {
+        "colectivo": "Menores de 30 años",
+        "porcentaje": 0,
+        "condiciones": "Reduccion del 100% (exencion), en vigor desde el 01/01/2024."
+      }
+    ],
+    "source": "Administración Tributaria de Aragón - Compraventa de inmuebles, tipos de ITP",
+    "source_url": "https://www.aragon.es/administracion-tributaria-de-aragon/gestiones-habituales/compraventa-de-inmuebles",
+    "last_updated": "2026-06-01",
+    "confidence": "real",
+    "notes": "Los porcentajes de la columna 'reducciones' son un calculo propio (tipo del primer tramo x (1 - % de reduccion indicado en la pagina oficial)) para que el campo `porcentaje` represente siempre el tipo efectivo aplicable, no el % de descuento. VPO en Aragon tributa al 4% de IVA (no ITP) en primera transmision -- no se incluye aqui por ser un impuesto distinto."
+  }
+]
