@@ -18,21 +18,12 @@ interface AdSlotProps {
   className?: string;
 }
 
-let scriptLoaded = false;
-
-function loadAdSenseScript() {
-  if (scriptLoaded || !ADSENSE_CLIENT_ID) return;
-  const script = document.createElement("script");
-  script.async = true;
-  script.src = `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT_ID}`;
-  script.crossOrigin = "anonymous";
-  document.head.appendChild(script);
-  scriptLoaded = true;
-}
-
 /**
  * Anuncio de AdSense con:
- *  - carga diferida del script hasta que el usuario da consentimiento (ads),
+ *  - la libreria base (adsbygoogle.js) se carga siempre desde el <head>
+ *    del layout raiz (necesario para que el crawler de verificacion de
+ *    Google encuentre el sitio), pero cada bloque de anuncio individual
+ *    NO se renderiza hasta que el usuario da consentimiento de publicidad,
  *  - render diferido (IntersectionObserver) si el slot esta fuera del
  *    viewport inicial, para no penalizar Core Web Vitals (LCP/CLS),
  *  - separacion visual clara del contenido (etiqueta "Publicidad"),
@@ -73,7 +64,6 @@ export function AdSlot({ slotId, placement, className = "" }: AdSlotProps) {
 
   useEffect(() => {
     if (shouldRender && hasConsent) {
-      loadAdSenseScript();
       try {
         window.adsbygoogle = window.adsbygoogle || [];
         window.adsbygoogle.push({});
