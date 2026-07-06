@@ -17,6 +17,9 @@ export const metadata: Metadata = {
   },
   description:
     "Calculadoras y guias de vivienda en Espana: hipotecas, comprar vs alquilar, coste de reforma, gastos de compra y mudanzas, con datos y fuentes verificables.",
+  verification: {
+    google: "FRWNQFwnuUUCjWfLbE9wwXS596vCz5mcjbwRtySdY9k",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
