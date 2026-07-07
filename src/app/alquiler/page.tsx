@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
+import { CoverImage } from "@/components/seo/CoverImage";
 import { FaqSection } from "@/components/seo/FaqSection";
 import { Disclaimer } from "@/components/seo/Disclaimer";
 import { AdSlot } from "@/components/ads/AdSlot";
@@ -24,6 +25,8 @@ export default function AlquilerHubPage() {
       <Breadcrumbs items={[{ name: "Inicio", href: "/" }, { name: "Alquiler", href: "/alquiler" }]} />
 
       <h1 className="text-3xl font-bold text-slate-900 dark:text-white">Alquiler de vivienda en Espana</h1>
+
+      <CoverImage src="/images/alquiler-salon-acogedor.jpg" alt="Salon y comedor acogedores de un piso de alquiler" priority />
 
       <p className="text-lg text-slate-600 dark:text-slate-300">
         La Ley de Arrendamientos Urbanos (LAU) protege al inquilino con una duracion minima de

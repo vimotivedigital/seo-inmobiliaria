@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
+import { CoverImage } from "@/components/seo/CoverImage";
 import { buildEditorialMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = buildEditorialMetadata(
@@ -15,6 +16,8 @@ export default function SobreNosotrosPage() {
       <Breadcrumbs items={[{ name: "Inicio", href: "/" }, { name: "Sobre nosotros", href: "/sobre-nosotros" }]} />
 
       <h1 className="text-3xl font-bold text-slate-900 dark:text-white">Sobre nosotros</h1>
+
+      <CoverImage src="/images/sobre-nosotros-loft.jpg" alt="Interior de un loft moderno" priority />
 
       <p className="text-lg text-slate-600 dark:text-slate-300">
         Guia de Vivienda es un proyecto editorial independiente centrado en ayudar a quien

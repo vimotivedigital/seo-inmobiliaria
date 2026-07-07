@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
+import { CoverImage } from "@/components/seo/CoverImage";
 import { FaqSection } from "@/components/seo/FaqSection";
 import { SourceBox } from "@/components/seo/SourceBox";
 import { Disclaimer } from "@/components/seo/Disclaimer";
@@ -24,6 +25,8 @@ export default function HipotecasHubPage() {
       <Breadcrumbs items={[{ name: "Inicio", href: "/" }, { name: "Hipotecas", href: "/hipotecas" }]} />
 
       <h1 className="text-3xl font-bold text-slate-900 dark:text-white">Hipotecas en Espana</h1>
+
+      <CoverImage src="/images/hipotecas-sofa-vistas.jpg" alt="Salon acogedor de una vivienda con vistas a la ciudad" priority />
 
       <p className="text-lg text-slate-600 dark:text-slate-300">
         Elegir hipoteca es probablemente la decision financiera de mayor impacto que tomaras en

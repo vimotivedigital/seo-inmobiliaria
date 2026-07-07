@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
+import { CoverImage } from "@/components/seo/CoverImage";
 import { FaqSection } from "@/components/seo/FaqSection";
 import { Disclaimer } from "@/components/seo/Disclaimer";
 import { AdSlot } from "@/components/ads/AdSlot";
@@ -22,6 +23,8 @@ export default function ReformasHubPage() {
       <Breadcrumbs items={[{ name: "Inicio", href: "/" }, { name: "Reformas", href: "/reformas" }]} />
 
       <h1 className="text-3xl font-bold text-slate-900 dark:text-white">Reformas de vivienda: cuanto cuestan por m2</h1>
+
+      <CoverImage src="/images/reformas-habitacion-vacia.jpg" alt="Habitacion vacia recien reformada" priority />
 
       <p className="text-lg text-slate-600 dark:text-slate-300">
         El coste de una reforma depende sobre todo del alcance (pintura vs reforma integral) y en

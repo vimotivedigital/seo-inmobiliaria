@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
+import { CoverImage } from "@/components/seo/CoverImage";
 import { FaqSection } from "@/components/seo/FaqSection";
 import { Disclaimer } from "@/components/seo/Disclaimer";
 import { AdSlot } from "@/components/ads/AdSlot";
@@ -18,6 +19,8 @@ export default function GastosViviendaHubPage() {
       <Breadcrumbs items={[{ name: "Inicio", href: "/" }, { name: "Gastos de vivienda", href: "/gastos-vivienda" }]} />
 
       <h1 className="text-3xl font-bold text-slate-900 dark:text-white">Gastos de vivienda en propiedad</h1>
+
+      <CoverImage src="/images/gastos-estudio-ciudad.jpg" alt="Estudio con vistas a la ciudad" priority />
 
       <p className="text-lg text-slate-600 dark:text-slate-300">
         Ser propietario no termina en la cuota de la hipoteca. Hay un conjunto de gastos

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
+import { CoverImage } from "@/components/seo/CoverImage";
 import { FaqSection } from "@/components/seo/FaqSection";
 import { Disclaimer } from "@/components/seo/Disclaimer";
 import { AdSlot } from "@/components/ads/AdSlot";
@@ -22,6 +23,8 @@ export default function ComprarViviendaHubPage() {
       <Breadcrumbs items={[{ name: "Inicio", href: "/" }, { name: "Comprar vivienda", href: "/comprar-vivienda" }]} />
 
       <h1 className="text-3xl font-bold text-slate-900 dark:text-white">Comprar vivienda en Espana</h1>
+
+      <CoverImage src="/images/comprar-edificio-atardecer.jpg" alt="Edificio residencial al atardecer" priority />
 
       <p className="text-lg text-slate-600 dark:text-slate-300">
         Comprar una vivienda implica bastante mas que negociar el precio con el vendedor. Entre

@@ -1,10 +1,10 @@
 import Link from "next/link";
+import Image from "next/image";
 import type { Metadata } from "next";
 import { Landmark, Home, KeyRound, Hammer, Receipt, Calculator, MapPin } from "lucide-react";
 import { getAllCities } from "@/lib/data";
 import { filterIndexableEntities } from "@/lib/quality-control";
 import { buildEditorialMetadata } from "@/lib/seo";
-import { HeroIllustration } from "@/components/home/HeroIllustration";
 
 export const metadata: Metadata = buildEditorialMetadata(
   "Calculadoras y guias de vivienda en Espana",
@@ -20,13 +20,27 @@ const HUBS = [
   { href: "/gastos-vivienda", title: "Gastos de vivienda", desc: "IBI, comunidad, suministros y mantenimiento anual.", icon: Receipt },
 ];
 
+const GALLERY = [
+  { src: "/images/galeria-edificio-atardecer.jpg", alt: "Fachada de un edificio residencial al atardecer" },
+  { src: "/images/galeria-cocina-abierta.jpg", alt: "Salon y cocina abierta de un piso reformado" },
+];
+
 export default function HomePage() {
   const indexableCities = filterIndexableEntities(getAllCities());
 
   return (
     <div>
       <section className="text-center mb-10">
-        <HeroIllustration />
+        <div className="relative mx-auto h-64 w-full max-w-3xl overflow-hidden rounded-2xl shadow-sm sm:h-80">
+          <Image
+            src="/images/hero-salon-vistas.jpg"
+            alt="Salon luminoso de un piso con vistas a la ciudad"
+            fill
+            priority
+            sizes="(max-width: 768px) 100vw, 768px"
+            className="object-cover"
+          />
+        </div>
         <h1 className="mt-6 text-3xl sm:text-4xl font-bold text-slate-900 dark:text-white">
           Decisiones de vivienda con datos, no con suposiciones
         </h1>
@@ -58,6 +72,21 @@ export default function HomePage() {
             </div>
             <p className="mt-2 text-sm text-slate-600 dark:text-slate-400">{hub.desc}</p>
           </Link>
+        ))}
+      </section>
+
+      <section className="mb-16 grid gap-4 sm:grid-cols-2">
+        {GALLERY.map((img) => (
+          <div key={img.src} className="relative h-48 overflow-hidden rounded-xl sm:h-56">
+            <Image
+              src={img.src}
+              alt={img.alt}
+              fill
+              sizes="(max-width: 640px) 100vw, 50vw"
+              loading="lazy"
+              className="object-cover"
+            />
+          </div>
         ))}
       </section>
 
