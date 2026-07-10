@@ -4,6 +4,7 @@ import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { CoverImage } from "@/components/seo/CoverImage";
 import { FaqSection } from "@/components/seo/FaqSection";
 import { Disclaimer } from "@/components/seo/Disclaimer";
+import { InternalLinks } from "@/components/seo/InternalLinks";
 import { AdSlot } from "@/components/ads/AdSlot";
 import { getAllCities } from "@/lib/data";
 import { filterIndexableEntities } from "@/lib/quality-control";
@@ -82,6 +83,13 @@ export default function ComprarViviendaHubPage() {
             answer:
               "Si, el vendedor debe entregarlo antes de la firma. Es informativo y no impide la compra, pero puedes usarlo para estimar el gasto energetico futuro de la vivienda.",
           },
+        ]}
+      />
+
+      <InternalLinks
+        heading="Para cuando tengas las llaves"
+        items={[
+          { href: "/recomendados/organizacion-hogar", label: "Productos para organizar tu piso nuevo" },
         ]}
       />
     </article>

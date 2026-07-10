@@ -4,6 +4,7 @@ import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { CoverImage } from "@/components/seo/CoverImage";
 import { FaqSection } from "@/components/seo/FaqSection";
 import { Disclaimer } from "@/components/seo/Disclaimer";
+import { InternalLinks } from "@/components/seo/InternalLinks";
 import { AdSlot } from "@/components/ads/AdSlot";
 import { buildEditorialMetadata } from "@/lib/seo";
 
@@ -54,6 +55,13 @@ export default function GastosViviendaHubPage() {
             answer:
               "No por ley, pero la practica totalidad de bancos lo exige como condicion para conceder una hipoteca, al menos en su modalidad de continente.",
           },
+        ]}
+      />
+
+      <InternalLinks
+        heading="Productos recomendados"
+        items={[
+          { href: "/recomendados/ahorro-energetico", label: "Productos para ahorrar en la factura de luz y gas" },
         ]}
       />
     </article>

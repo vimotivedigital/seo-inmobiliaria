@@ -19,6 +19,7 @@ export function Footer() {
             <p className="font-semibold text-slate-700 mb-2 dark:text-slate-200">Herramientas</p>
             <ul className="space-y-1">
               <li><Link href="/hipoteca-calculadora" className="hover:text-brand-700 dark:hover:text-brand-400">Calculadora de hipoteca</Link></li>
+              <li><Link href="/recomendados" className="hover:text-brand-700 dark:hover:text-brand-400">Recomendados</Link></li>
             </ul>
           </div>
           <div>

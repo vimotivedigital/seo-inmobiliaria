@@ -4,6 +4,7 @@ import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { CoverImage } from "@/components/seo/CoverImage";
 import { FaqSection } from "@/components/seo/FaqSection";
 import { Disclaimer } from "@/components/seo/Disclaimer";
+import { InternalLinks } from "@/components/seo/InternalLinks";
 import { AdSlot } from "@/components/ads/AdSlot";
 import { getAllCities, getReformaCostByCity } from "@/lib/data";
 import { filterIndexableEntities } from "@/lib/quality-control";
@@ -77,6 +78,13 @@ export default function ReformasHubPage() {
             answer:
               "El 10% se aplica a reformas de vivienda habitual con mas de 2 anios de antiguedad, cuando el coste de materiales no supera el 40% de la base imponible. Fuera de esos requisitos se aplica el 21% general.",
           },
+        ]}
+      />
+
+      <InternalLinks
+        heading="Herramientas recomendadas"
+        items={[
+          { href: "/recomendados/reformas-bricolaje", label: "Kit basico de herramientas para tu reforma" },
         ]}
       />
     </article>

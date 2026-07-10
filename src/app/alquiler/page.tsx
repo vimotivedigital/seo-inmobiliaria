@@ -4,6 +4,7 @@ import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { CoverImage } from "@/components/seo/CoverImage";
 import { FaqSection } from "@/components/seo/FaqSection";
 import { Disclaimer } from "@/components/seo/Disclaimer";
+import { InternalLinks } from "@/components/seo/InternalLinks";
 import { AdSlot } from "@/components/ads/AdSlot";
 import { getAllCities } from "@/lib/data";
 import { filterIndexableEntities } from "@/lib/quality-control";
@@ -83,6 +84,13 @@ export default function AlquilerHubPage() {
             answer:
               "Un mes desde la entrega de llaves. Pasado ese plazo sin devolucion, puedes reclamar intereses de demora.",
           },
+        ]}
+      />
+
+      <InternalLinks
+        heading="Para tu piso de alquiler"
+        items={[
+          { href: "/recomendados/organizacion-hogar", label: "Productos sin obra, ideales para alquiler" },
         ]}
       />
     </article>
