@@ -1,4 +1,4 @@
-# Guia de Vivienda — pSEO inmobiliario (YMYL)
+# TipoFijo — pSEO inmobiliario (YMYL)
 
 Base de una web de programmatic SEO en el nicho de vivienda (Espana),
 construida priorizando calidad y E-E-A-T sobre volumen de paginas. Ver el

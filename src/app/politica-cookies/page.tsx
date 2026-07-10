@@ -4,7 +4,7 @@ import { buildEditorialMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = buildEditorialMetadata(
   "Politica de cookies",
-  "Que cookies usa Guia de Vivienda, con que finalidad y como puedes gestionar tu consentimiento.",
+  "Que cookies usa TipoFijo, con que finalidad y como puedes gestionar tu consentimiento.",
   "/politica-cookies"
 );
 

@@ -53,7 +53,7 @@ export function buildArticleJsonLd(args: {
     dateModified: args.dateModified,
     author: {
       "@type": "Organization",
-      name: "Guia de Vivienda",
+      name: "TipoFijo",
     },
   };
 }

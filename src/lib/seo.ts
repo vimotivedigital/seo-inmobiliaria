@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import type { PageQualityResult } from "@/types/data";
 
-export const SITE_NAME = "Guia de Vivienda";
-export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.guiadevivienda.example";
+export const SITE_NAME = "TipoFijo";
+export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://tipofijo.com";
 
 interface BuildMetadataArgs {
   title: string;

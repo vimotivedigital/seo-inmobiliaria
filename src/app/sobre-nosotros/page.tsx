@@ -6,7 +6,7 @@ import { buildEditorialMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = buildEditorialMetadata(
   "Sobre nosotros",
-  "Quienes hacemos Guia de Vivienda, con que criterio editorial trabajamos y como puedes contactarnos.",
+  "Quienes hacemos TipoFijo, con que criterio editorial trabajamos y como puedes contactarnos.",
   "/sobre-nosotros"
 );
 
@@ -20,7 +20,7 @@ export default function SobreNosotrosPage() {
       <CoverImage src="/images/sobre-nosotros-loft.jpg" alt="Interior de un loft moderno" priority />
 
       <p className="text-lg text-slate-600 dark:text-slate-300">
-        Guia de Vivienda es un proyecto editorial independiente centrado en ayudar a quien
+        TipoFijo es un proyecto editorial independiente centrado en ayudar a quien
         compra, alquila o reforma una vivienda en Espana a tomar decisiones con datos, no con
         suposiciones. Publicamos calculadoras interactivas y guias basadas en fuentes publicas y
         medias de mercado, siempre indicando su procedencia (ver{" "}
@@ -38,7 +38,7 @@ export default function SobreNosotrosPage() {
       <h2>Contacto</h2>
       <p>
         Para consultas sobre datos, correcciones o colaboraciones, escribe a{" "}
-        <a href="mailto:contacto@guiadevivienda.example">contacto@guiadevivienda.example</a>.
+        <a href="mailto:contacto@tipofijo.com">contacto@tipofijo.com</a>.
       </p>
     </article>
   );

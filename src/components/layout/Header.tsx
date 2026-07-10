@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Home, Landmark, KeyRound, Hammer, Receipt, Calculator } from "lucide-react";
 import { ThemeToggle } from "@/components/layout/ThemeToggle";
 
@@ -15,10 +16,12 @@ export function Header() {
     <header className="sticky top-0 z-40 border-b border-slate-200 bg-white/80 backdrop-blur dark:border-slate-800 dark:bg-slate-950/80">
       <div className="mx-auto flex max-w-5xl items-center justify-between px-4 py-4">
         <Link href="/" className="flex items-center gap-2 text-lg font-bold text-slate-900 dark:text-white">
-          <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-brand-600 text-white">
-            <Home size={18} />
+          <Image src="/images/logo-icon.png" alt="" width={36} height={36} priority className="h-9 w-9" />
+          <span>
+            <span className="text-brand-600 dark:text-brand-400">tipo</span>
+            fijo
+            <span className="text-brand-600 dark:text-brand-400">.com</span>
           </span>
-          Guia de Vivienda
         </Link>
         <nav className="hidden gap-6 text-sm font-medium text-slate-600 md:flex dark:text-slate-300">
           {NAV_ITEMS.map((item) => (

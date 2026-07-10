@@ -4,7 +4,7 @@ import { buildEditorialMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = buildEditorialMetadata(
   "Aviso legal",
-  "Condiciones de uso, titularidad del sitio y limitacion de responsabilidad de Guia de Vivienda.",
+  "Condiciones de uso, titularidad del sitio y limitacion de responsabilidad de TipoFijo.",
   "/aviso-legal"
 );
 
@@ -17,7 +17,7 @@ export default function AvisoLegalPage() {
 
       <h2>Naturaleza informativa del contenido</h2>
       <p>
-        Todo el contenido de Guia de Vivienda, incluidas sus calculadoras, tiene una finalidad
+        Todo el contenido de TipoFijo, incluidas sus calculadoras, tiene una finalidad
         exclusivamente informativa. No constituye asesoramiento financiero, fiscal, legal ni
         inmobiliario, ni una recomendacion de compra, venta, alquiler o contratacion de ningun
         producto financiero. Antes de tomar decisiones con impacto economico, consulta con un
@@ -34,7 +34,7 @@ export default function AvisoLegalPage() {
 
       <h2>Propiedad intelectual</h2>
       <p>
-        Los textos, calculos y diseño de este sitio son propiedad de Guia de Vivienda salvo
+        Los textos, calculos y diseño de este sitio son propiedad de TipoFijo salvo
         indicacion contraria. Queda prohibida su reproduccion total o parcial sin autorizacion.
       </p>
     </article>

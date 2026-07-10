@@ -34,7 +34,7 @@ export function Footer() {
           </div>
         </div>
         <p className="mt-8 flex items-center gap-1.5 text-xs">
-          <Info size={13} />© {new Date().getFullYear()} Guia de Vivienda.
+          <Info size={13} />© {new Date().getFullYear()} TipoFijo.
         </p>
       </div>
     </footer>
