@@ -90,6 +90,7 @@ export default function ComprarViviendaHubPage() {
         heading="Para cuando tengas las llaves"
         items={[
           { href: "/recomendados/organizacion-hogar", label: "Productos para organizar tu piso nuevo" },
+          { href: "/vender-vivienda", label: "¿Vendes para comprar? Valora tu vivienda actual gratis" },
         ]}
       />
     </article>

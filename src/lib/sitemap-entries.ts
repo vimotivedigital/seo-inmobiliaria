@@ -1,5 +1,6 @@
 import { getAllCities, getAllMudanzaRoutes, getCityBySlug, getReformaCostByCity, getPurchaseCostForCity } from "@/lib/data";
-import { evaluateCityPageQuality, evaluatePageQuality } from "@/lib/quality-control";
+import { getAllVenderViviendaLocalidades } from "@/lib/vender-vivienda";
+import { evaluateCityPageQuality, evaluatePageQuality, evaluateVenderViviendaQuality } from "@/lib/quality-control";
 import {
   buildComprarVsAlquilarContent,
   buildComprarVsAlquilarFaqs,
@@ -11,6 +12,8 @@ import {
   buildCertificadoEnergeticoFaqs,
   buildMudanzaContent,
   buildMudanzaFaqs,
+  buildVenderViviendaContent,
+  buildVenderViviendaFaqs,
   combineUniqueContent,
 } from "@/lib/content-builders";
 import { SITE_URL } from "@/lib/seo";
@@ -42,6 +45,8 @@ const STATIC_EDITORIAL_PATHS = [
   "/blog/checklist-mudanza-que-necesitas",
   "/blog/como-ahorrar-en-la-factura-de-luz-sin-obras",
   "/blog/organizar-piso-alquiler-sin-taladrar",
+  "/vender-vivienda",
+  "/politica-privacidad",
 ];
 
 /**
@@ -86,6 +91,13 @@ export function getAllIndexableUrls(): SitemapEntry[] {
     const certText = combineUniqueContent(buildCertificadoEnergeticoContent(city), buildCertificadoEnergeticoFaqs(city));
     if (evaluateCityPageQuality(city, certText).indexable) {
       entries.push({ url: `${SITE_URL}/certificado-energetico/${city.slug}`, lastModified: city.price_per_sqm.last_updated });
+    }
+  }
+
+  for (const localidad of getAllVenderViviendaLocalidades()) {
+    const text = combineUniqueContent(buildVenderViviendaContent(localidad), buildVenderViviendaFaqs(localidad));
+    if (evaluateVenderViviendaQuality(localidad, text).indexable) {
+      entries.push({ url: `${SITE_URL}/vender-vivienda/${localidad.slug}`, lastModified: localidad.price_per_sqm.last_updated });
     }
   }
 

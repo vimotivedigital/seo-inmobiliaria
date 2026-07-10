@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Home, Landmark, KeyRound, Hammer, Receipt, Calculator } from "lucide-react";
+import { Home, Landmark, KeyRound, Hammer, Receipt, Calculator, Banknote } from "lucide-react";
 import { ThemeToggle } from "@/components/layout/ThemeToggle";
 
 const NAV_ITEMS = [
@@ -9,6 +9,7 @@ const NAV_ITEMS = [
   { href: "/alquiler", label: "Alquiler", icon: KeyRound },
   { href: "/reformas", label: "Reformas", icon: Hammer },
   { href: "/gastos-vivienda", label: "Gastos de vivienda", icon: Receipt },
+  { href: "/vender-vivienda", label: "Vender vivienda", icon: Banknote },
 ];
 
 export function Header() {

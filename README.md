@@ -49,6 +49,10 @@ data/
   reforma-costs.json          Coste de reforma €/m2 (Habitissimo, nacional)
                               + presupuesto total real por ciudad si existe.
   mudanza-routes.json         Coste de mudanza por ruta (Sirelo, estimado).
+  vender-vivienda-localidades.json  7 municipios del Baix Llobregat Sud/Garraf
+                              para la seccion de leads: precio €/m2 (Fotocasa,
+                              real), search_volume_tier heuristico (ver
+                              seccion propia mas abajo), local_factors.
 src/types/data.ts             Modelo de datos: SourcedValue (con source_url/
                               fuentes/nota/next_review_due opcionales),
                               CcaaPurchaseCost (discriminated union fijo/
@@ -78,6 +82,8 @@ src/app/
   comprar-vs-alquilar|coste-compra-vivienda|coste-reforma-m2|
   certificado-energetico/[ciudad]/   Plantillas programaticas por ciudad.
   coste-mudanza/[ruta]/        Plantilla programatica por ruta origen-destino.
+  vender-vivienda/[localidad]/  Captacion de leads (ver seccion propia mas abajo).
+  api/leads/vender-vivienda/    Route handler: valida, envia por Resend, audita.
   sitemap.ts, robots.ts        Segmentados y derivados del gate de calidad.
 scripts/
   quality-report.ts           `npm run qc:report`: lista index/noindex y el motivo.
@@ -171,3 +177,58 @@ Aragón). Antes de anadir ciudades de otras comunidades:
   `Promise` en Server Components. Evaluar ese salto como tarea aparte antes
   de ir a produccion.
 - Completar `docs/ADSENSE_GDPR_CHECKLIST.md` con la cuenta de AdSense real.
+- Ver "Vender vivienda: captacion de leads" mas abajo para lo pendiente
+  especifico de esa seccion antes de publicarla.
+
+## Vender vivienda: captacion de leads (Baix Llobregat Sud)
+
+Seccion nueva (`/vender-vivienda`, `/vender-vivienda/[localidad]`) que capta
+leads de propietarios para reenviarlos a una agencia inmobiliaria
+colaboradora (modelo de referral). A diferencia del resto del sitio, esto
+recoge datos personales reales, asi que tiene su propio circuito de
+cumplimiento:
+
+- `data/vender-vivienda-localidades.json` — 7 municipios (Castelldefels,
+  Sitges, Vilanova i la Geltru, Gava, Viladecans, Sant Boi de Llobregat, Sant
+  Feliu de Llobregat), precio de venta €/m2 real de Fotocasa (junio/mayo
+  2026, con `source_url` propio por municipio). `search_volume_tier` aqui es
+  una estimacion heuristica (poblacion + notoriedad turistica/inmobiliaria),
+  **no** un dato de Search Console real -- la seccion es nueva y no tiene
+  historial de trafico todavia. Revisar con datos reales en cuanto haya
+  indexacion (ver `npm run qc:report`: hoy Sant Feliu de Llobregat queda
+  `noindex` por tier `"bajo"`, los otros 6 quedan `index`).
+- Consentimiento RGPD: el formulario (`src/components/leads/SellLeadForm.tsx`)
+  tiene dos casillas independientes y sin premarcar -- una para que TipoFijo
+  contacte al usuario, otra especifica para ceder los datos a la agencia
+  colaboradora nombrada junto al formulario. El envio esta deshabilitado en
+  cliente hasta marcar ambas, y se vuelve a validar en servidor
+  (`src/lib/leads.ts#validateSellLeadPayload`) por si alguien salta el
+  cliente.
+- Backend del lead (`src/app/api/leads/vender-vivienda/route.ts`): honeypot +
+  rate limiting best-effort en memoria, envio por email via Resend
+  (`RESEND_API_KEY`/`LEAD_NOTIFICATION_EMAIL`), y una copia de auditoria en
+  `data/leads-audit.jsonl` (gitignored).
+- **Limite conocido de la auditoria local**: `data/leads-audit.jsonl` solo es
+  fiable en local/`next start` con disco persistente. En Vercel el sistema de
+  ficheros es de solo lectura fuera de `/tmp`, y `/tmp` no persiste entre
+  invocaciones ni despliegues -- por tanto ese fichero **no** sirve hoy como
+  prueba de cumplimiento RGPD en produccion. El email via Resend es la unica
+  copia duradera actual; antes de depender de esto para una auditoria real,
+  sustituir por un almacen persistente (Vercel Postgres/KV, Turso).
+
+### Pendiente antes de publicar esta seccion en produccion
+
+1. **Nombre y datos de contacto reales de la agencia colaboradora.**
+   Mientras `NEXT_PUBLIC_PARTNER_AGENCY_NAME`/`NEXT_PUBLIC_PARTNER_AGENCY_CONTACT`
+   no esten configurados, el sitio muestra el placeholder visible
+   `[agencia colaboradora pendiente de confirmar]` en el formulario y en
+   `/politica-privacidad`, precisamente para que no se pueda publicar sin
+   configurarlos.
+2. **`LEAD_NOTIFICATION_EMAIL` y `RESEND_API_KEY` configurados** en Vercel;
+   sin ellos, el lead solo queda en el log de auditoria local (ver limite de
+   arriba) y no llega ningun email.
+3. **Acuerdo de cesion de datos firmado con la agencia.** Esto es una
+   verificacion legal, no tecnica -- este proyecto no puede confirmar que
+   exista un contrato/acuerdo de encargado o corresponsable del tratamiento
+   con la agencia. No publicar el formulario en produccion sin esa
+   confirmacion legal.

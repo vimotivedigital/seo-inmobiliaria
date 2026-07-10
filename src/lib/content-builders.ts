@@ -1,4 +1,5 @@
 import type { City, CcaaPurchaseCost, ReformaCost, MudanzaRoute, SourcedValue } from "@/types/data";
+import type { VenderViviendaLocalidad } from "@/types/vender-vivienda";
 import type { FaqItem } from "@/lib/jsonld";
 import { formatEur, formatPercent } from "@/lib/seo";
 import { computeEffectiveRate, computeMarginalRate, computeProgressiveTaxAmount } from "@/lib/tax-brackets";
@@ -188,6 +189,29 @@ export function buildMudanzaFaqs(origin: City, destination: City, route: Mudanza
     {
       question: `¿Merece la pena contratar un seguro para la mudanza de ${origin.name} a ${destination.name}?`,
       answer: `En un trayecto de ${route.distance_km} km con transporte por carretera, el riesgo de dano es bajo pero no nulo, especialmente en electrodomesticos y mobiliario voluminoso. La mayoria de empresas ofrecen una cobertura basica incluida y un seguro ampliado opcional; si mudas objetos de alto valor (arte, electronica profesional), suele compensar contratarlo.`,
+    },
+  ];
+}
+
+export function buildVenderViviendaContent(localidad: VenderViviendaLocalidad): string {
+  return `Vender una vivienda en ${localidad.name} parte de un precio medio de mercado de ${formatEur(localidad.price_per_sqm.value)} por metro cuadrado. ${localidad.local_context} A la hora de fijar el precio de salida, lo mas habitual es partir de una valoracion basada en comparables reales de la zona (no solo en el precio medio del municipio, que puede variar mucho segun el barrio o la tipologia de vivienda) y ajustarla despues por el estado de conservacion, la orientacion y la planta del inmueble. El resto de esta pagina explica el proceso paso a paso y te permite solicitar una valoracion gratuita y sin compromiso.`;
+}
+
+export function buildVenderViviendaFaqs(localidad: VenderViviendaLocalidad): FaqItem[] {
+  const [primerFactor, segundoFactor] = localidad.local_factors;
+  return [
+    {
+      question: `¿Cuanto vale mi vivienda en ${localidad.name}?`,
+      answer: `El precio medio de venta en ${localidad.name} ronda los ${formatEur(localidad.price_per_sqm.value)} por metro cuadrado (ver fuente y fecha en la caja "Sobre estos datos" de esta pagina), pero el valor real de tu vivienda concreta depende del barrio, la planta, el estado de conservacion y la orientacion. Solicita una valoracion gratuita con el formulario de esta pagina para tener una cifra ajustada a tu inmueble, no solo a la media del municipio.`,
+    },
+    {
+      question: `¿Que hace diferente al mercado de ${localidad.name} frente a otros municipios cercanos?`,
+      answer: `${primerFactor ?? ""} ${segundoFactor ?? ""}`.trim(),
+    },
+    {
+      question: "¿Tiene algun coste solicitar la valoracion?",
+      answer:
+        "No. La valoracion inicial es gratuita y sin compromiso: un agente de la inmobiliaria colaboradora se pone en contacto contigo para concretar los detalles antes de proponer ningun encargo de venta.",
     },
   ];
 }

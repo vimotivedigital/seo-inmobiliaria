@@ -1,0 +1,163 @@
+[
+  {
+    "slug": "castelldefels",
+    "name": "Castelldefels",
+    "provincia": "Barcelona",
+    "comarca": "Baix Llobregat",
+    "ccaa": "Cataluña",
+    "population": 68000,
+    "price_per_sqm": {
+      "value": 4446,
+      "source": "Fotocasa - Índice Inmobiliario, precio de venta Castelldefels",
+      "source_url": "https://www.fotocasa.es/indice-precio-vivienda/castelldefels/todas-las-zonas",
+      "last_updated": "2026-06-30",
+      "confidence": "real",
+      "next_review_due": "2026-09-30"
+    },
+    "search_volume_tier": "alto",
+    "local_factors": [
+      "A 10 minutos del aeropuerto de Barcelona-El Prat y con playa propia, lo que atrae tanto a compradores nacionales como a compradores internacionales que buscan segunda residencia.",
+      "Fotocasa califica el mercado de Castelldefels como \"caliente\", con buena rotacion de anuncios, aunque con comportamiento distinto segun el tamano: la vivienda grande (+100 m2) sube en torno a un 1,7% interanual, mientras que la vivienda pequena se ha moderado ligeramente.",
+      "Conviven dos tipologias muy distintas -- piso de playa (Castelldefels Platja) y vivienda unifamiliar en el nucleo urbano -- con rangos de precio muy alejados entre si, algo a tener en cuenta al fijar el precio de salida."
+    ],
+    "local_context": "Castelldefels combina playa, cercania al aeropuerto y a Barcelona capital (unos 20 minutos), lo que sostiene una demanda de compra constante tanto de residentes como de compradores que buscan segunda vivienda en la costa del Baix Llobregat."
+  },
+  {
+    "slug": "sitges",
+    "name": "Sitges",
+    "provincia": "Barcelona",
+    "comarca": "Garraf",
+    "ccaa": "Cataluña",
+    "population": 29000,
+    "price_per_sqm": {
+      "value": 6553,
+      "source": "Fotocasa - Índice Inmobiliario, precio de venta Sitges",
+      "source_url": "https://www.fotocasa.es/indice-precio-vivienda/sitges/todas-las-zonas",
+      "last_updated": "2026-06-30",
+      "confidence": "real",
+      "next_review_due": "2026-09-30"
+    },
+    "search_volume_tier": "alto",
+    "local_factors": [
+      "Es, con diferencia, la localidad mas cara de las siete de este listado: el precio medio supera con holgura al resto por su mercado de segunda residencia y comprador internacional de alto poder adquisitivo.",
+      "La subida interanual es muy superior a la de cualquier municipio vecino (+23,4% en vivienda grande, +12% en vivienda pequena segun Fotocasa), por lo que una valoracion basada en el precio de hace uno o dos anos puede quedarse claramente por debajo del mercado actual.",
+      "El comprador extranjero y el turismo residencial (segundas residencias, alquiler vacacional posterior a la compra) pesan mas aqui que en el resto de municipios de la zona, lo que cambia tanto el perfil de comprador como los tiempos habituales de decision."
+    ],
+    "local_context": "Sitges es el municipio con mayor notoriedad turistica e internacional de la zona, y eso se traduce en un mercado de compraventa que se mueve con logica propia: precios muy por encima de la media comarcal y subidas interanuales muy superiores a las de los municipios vecinos del Baix Llobregat."
+  },
+  {
+    "slug": "vilanova-i-la-geltru",
+    "name": "Vilanova i la Geltrú",
+    "provincia": "Barcelona",
+    "comarca": "Garraf",
+    "ccaa": "Cataluña",
+    "population": 69000,
+    "price_per_sqm": {
+      "value": 3187,
+      "source": "Fotocasa - Índice Inmobiliario, precio de venta Vilanova i la Geltrú",
+      "source_url": "https://www.fotocasa.es/indice-precio-vivienda/vilanova-i-la-geltru/todas-las-zonas",
+      "last_updated": "2026-06-30",
+      "confidence": "real",
+      "next_review_due": "2026-09-30"
+    },
+    "search_volume_tier": "medio",
+    "local_factors": [
+      "Capital de la comarca del Garraf, con un precio medio muy por debajo de Sitges pese a la cercania (menos de 10 km), lo que la convierte en alternativa habitual para compradores que descartan Sitges por presupuesto.",
+      "Combina zona de playa, casco antiguo historico y ensanche mas reciente, con rangos de precio bastante distintos segun el barrio dentro del mismo municipio.",
+      "Subida interanual sostenida en ambos tramos de tamano (+4,5% en vivienda pequena, +6,6% en vivienda grande), sin la volatilidad de mercados mas turisticos."
+    ],
+    "local_context": "Vilanova i la Geltrú funciona como alternativa mas accesible a Sitges dentro del Garraf: playa y capitalidad comarcal con un precio medio sensiblemente inferior, lo que atrae tanto a compradores locales como a quienes buscan costa sin pagar el sobreprecio de Sitges."
+  },
+  {
+    "slug": "gava",
+    "name": "Gavà",
+    "provincia": "Barcelona",
+    "comarca": "Baix Llobregat",
+    "ccaa": "Cataluña",
+    "population": 48000,
+    "price_per_sqm": {
+      "value": 3600,
+      "source": "Fotocasa - Índice Inmobiliario, precio de venta Gavà",
+      "source_url": "https://www.fotocasa.es/indice-precio-vivienda/gava/todas-las-zonas",
+      "last_updated": "2026-06-30",
+      "confidence": "real",
+      "next_review_due": "2026-09-30"
+    },
+    "search_volume_tier": "medio",
+    "local_factors": [
+      "El nucleo urbano y la zona de playa (Gavà Mar) tienen mercados y precios claramente distintos dentro del mismo municipio, algo que conviene explicar al propietario al fijar expectativas de precio.",
+      "Buena conexion por Rodalies con Barcelona, lo que mantiene una demanda estable de compradores que trabajan en la capital pero buscan un precio por m2 mas bajo que en la propia ciudad.",
+      "La vivienda pequena ha subido notablemente mas que la grande en el ultimo ano (+8,5% frente a +1,9%), señal de fuerte demanda de piso de entrada a la zona."
+    ],
+    "local_context": "Gavà combina un nucleo urbano bien conectado con Barcelona por tren y una zona de playa (Gavà Mar) con dinamica de precios independiente, lo que hace que el mismo municipio contenga en la practica dos mercados inmobiliarios distintos."
+  },
+  {
+    "slug": "viladecans",
+    "name": "Viladecans",
+    "provincia": "Barcelona",
+    "comarca": "Baix Llobregat",
+    "ccaa": "Cataluña",
+    "population": 67000,
+    "price_per_sqm": {
+      "value": 3095,
+      "source": "Fotocasa - Índice Inmobiliario, precio de venta Viladecans",
+      "source_url": "https://www.fotocasa.es/indice-precio-vivienda/viladecans/todas-las-zonas",
+      "last_updated": "2026-06-30",
+      "confidence": "real",
+      "next_review_due": "2026-09-30"
+    },
+    "search_volume_tier": "medio",
+    "local_factors": [
+      "Subida interanual muy homogenea y de las mas altas de la zona en ambos tramos de tamano (+9,6% y +10,1%), por encima de municipios vecinos como Gavà o Sant Boi.",
+      "Cercania al aeropuerto de El Prat y buena conexion con la Zona Franca y el centro de Barcelona, con mezcla de piso de bloque y vivienda unifamiliar en las urbanizaciones del extrarradio.",
+      "Precio por m2 todavia sensiblemente por debajo de Castelldefels o Gavà, lo que la situa como opcion de entrada dentro de la zona costera del Baix Llobregat."
+    ],
+    "local_context": "Viladecans ha registrado la subida de precio mas fuerte y homogenea de los municipios del Baix Llobregat de este listado en el ultimo ano, mientras mantiene un precio por m2 todavia inferior al de Castelldefels o Gavà."
+  },
+  {
+    "slug": "sant-boi-de-llobregat",
+    "name": "Sant Boi de Llobregat",
+    "provincia": "Barcelona",
+    "comarca": "Baix Llobregat",
+    "ccaa": "Cataluña",
+    "population": 86000,
+    "price_per_sqm": {
+      "value": 2723,
+      "source": "Fotocasa - Índice Inmobiliario, precio de venta Sant Boi de Llobregat",
+      "source_url": "https://www.fotocasa.es/indice-precio-vivienda/sant-boi-de-llobregat/todas-las-zonas",
+      "last_updated": "2026-06-30",
+      "confidence": "real",
+      "next_review_due": "2026-09-30"
+    },
+    "search_volume_tier": "medio",
+    "local_factors": [
+      "Es el municipio mas poblado de los siete de este listado, con conexion directa a Barcelona por la linea L8 de metro (FGC), lo que amplia el radio de compradores potenciales a quienes buscan vivir cerca de la capital sin pagar sus precios.",
+      "El precio medio por m2 es el mas bajo de los siete municipios, lo que lo convierte en una opcion habitual para compradores que descartan otras zonas de la comarca por presupuesto.",
+      "Subida interanual notable (+6,55%) pese a ser la localidad con el precio de entrada mas accesible de la zona."
+    ],
+    "local_context": "Sant Boi de Llobregat es el municipio mas poblado de esta zona y el que ofrece el precio de entrada mas accesible, con conexion directa por metro a Barcelona, lo que lo mantiene como opcion habitual para compradores con presupuesto mas ajustado que en la costa."
+  },
+  {
+    "slug": "sant-feliu-de-llobregat",
+    "name": "Sant Feliu de Llobregat",
+    "provincia": "Barcelona",
+    "comarca": "Baix Llobregat",
+    "ccaa": "Cataluña",
+    "population": 45000,
+    "price_per_sqm": {
+      "value": 4338,
+      "source": "Fotocasa - Índice Inmobiliario, precio de venta Sant Feliu de Llobregat",
+      "source_url": "https://www.fotocasa.es/indice-precio-vivienda/sant-feliu-de-llobregat/todas-las-zonas",
+      "last_updated": "2026-05-31",
+      "confidence": "real",
+      "next_review_due": "2026-08-31"
+    },
+    "search_volume_tier": "bajo",
+    "local_factors": [
+      "Municipio mas pequeno y menos turistico de los siete, con mercado mas maduro y estable: la vivienda grande (+100 m2) ha corregido ligeramente a la baja en el ultimo ano (-1,44%).",
+      "Buena conexion por FGC con Barcelona (linea directa a Plaça Espanya), con perfil de comprador mayoritariamente local o del area metropolitana, no de segunda residencia.",
+      "La vivienda pequena, en cambio, ha subido con fuerza (+24,8% interanual segun Fotocasa), lo que sugiere alta demanda de piso de entrada en el nucleo urbano."
+    ],
+    "local_context": "Sant Feliu de Llobregat es el municipio menos turistico y de menor poblacion de los siete: su mercado se mueve por demanda local y de proximidad a Barcelona via FGC, sin la presion de comprador internacional o de segunda residencia que si existe en Sitges o Castelldefels."
+  }
+]

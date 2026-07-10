@@ -1,4 +1,5 @@
 import type { City, PageQualityResult, SearchVolumeTier } from "@/types/data";
+import type { VenderViviendaLocalidad } from "@/types/vender-vivienda";
 
 /**
  * Puerta de control de calidad para paginas programaticas.
@@ -77,6 +78,24 @@ export function evaluateCityPageQuality(city: City, uniqueContent: string): Page
     uniqueContent,
     hasVerifiedSource: Boolean(city.price_per_sqm?.source),
     hasUniqueDatapoint: Boolean(city.local_context && city.local_context.length > 40),
+  });
+}
+
+/**
+ * Atajo para paginas de localidad de "vender vivienda": mismo criterio que
+ * `evaluateCityPageQuality`, pero sobre `VenderViviendaLocalidad`. Se separa
+ * de esa funcion (en vez de reutilizarla con un cast) porque el tipo no
+ * comparte forma con `City` (no tiene `rent_per_sqm`/`price_yoy_change`).
+ */
+export function evaluateVenderViviendaQuality(
+  localidad: VenderViviendaLocalidad,
+  uniqueContent: string
+): PageQualityResult {
+  return evaluatePageQuality({
+    searchVolumeTier: localidad.search_volume_tier,
+    uniqueContent,
+    hasVerifiedSource: Boolean(localidad.price_per_sqm?.source),
+    hasUniqueDatapoint: Boolean(localidad.local_context && localidad.local_context.length > 40),
   });
 }
 

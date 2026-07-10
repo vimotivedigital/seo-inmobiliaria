@@ -36,6 +36,31 @@ export function buildBreadcrumbJsonLd(items: { name: string; url: string }[]) {
   };
 }
 
+/**
+ * Service JSON-LD para las paginas de "vender vivienda". Se usa `Service`
+ * (no `LocalBusiness`) porque TipoFijo no es el negocio que presta el
+ * servicio de venta en si -- es el intermediario que deriva el lead a la
+ * agencia colaboradora nombrada en `provider`.
+ */
+export function buildServiceJsonLd(args: {
+  name: string;
+  description: string;
+  url: string;
+  areaServed: string;
+  providerName: string;
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    serviceType: "Venta de vivienda",
+    name: args.name,
+    description: args.description,
+    url: args.url,
+    areaServed: { "@type": "Place", name: args.areaServed },
+    provider: { "@type": "RealEstateAgent", name: args.providerName },
+  };
+}
+
 export function buildArticleJsonLd(args: {
   headline: string;
   description: string;

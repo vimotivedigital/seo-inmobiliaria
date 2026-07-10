@@ -27,3 +27,7 @@ next-env.d.ts
 
 # Claude Code local tooling config (machine-specific, not part of the app)
 .claude/
+
+# Registro local de auditoria de leads (datos personales, nunca a git;
+# ademas no persiste de forma fiable en Vercel, ver src/lib/leads.ts)
+/data/leads-audit.jsonl

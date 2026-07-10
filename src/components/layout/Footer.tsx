@@ -12,6 +12,7 @@ export function Footer() {
               <li><Link href="/sobre-nosotros" className="hover:text-brand-700 dark:hover:text-brand-400">Sobre nosotros</Link></li>
               <li><Link href="/metodologia" className="hover:text-brand-700 dark:hover:text-brand-400">Metodologia</Link></li>
               <li><Link href="/politica-cookies" className="hover:text-brand-700 dark:hover:text-brand-400">Cookies</Link></li>
+              <li><Link href="/politica-privacidad" className="hover:text-brand-700 dark:hover:text-brand-400">Privacidad</Link></li>
               <li><Link href="/aviso-legal" className="hover:text-brand-700 dark:hover:text-brand-400">Aviso legal</Link></li>
             </ul>
           </div>
@@ -19,6 +20,7 @@ export function Footer() {
             <p className="font-semibold text-slate-700 mb-2 dark:text-slate-200">Herramientas</p>
             <ul className="space-y-1">
               <li><Link href="/hipoteca-calculadora" className="hover:text-brand-700 dark:hover:text-brand-400">Calculadora de hipoteca</Link></li>
+              <li><Link href="/vender-vivienda" className="hover:text-brand-700 dark:hover:text-brand-400">Vender vivienda</Link></li>
               <li><Link href="/recomendados" className="hover:text-brand-700 dark:hover:text-brand-400">Recomendados</Link></li>
               <li><Link href="/blog" className="hover:text-brand-700 dark:hover:text-brand-400">Blog</Link></li>
             </ul>

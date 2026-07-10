@@ -1,5 +1,6 @@
 import { getAllCities, getAllMudanzaRoutes, getCityBySlug, getReformaCostByCity, getPurchaseCostForCity } from "../src/lib/data";
-import { evaluateCityPageQuality, evaluatePageQuality } from "../src/lib/quality-control";
+import { getAllVenderViviendaLocalidades } from "../src/lib/vender-vivienda";
+import { evaluateCityPageQuality, evaluatePageQuality, evaluateVenderViviendaQuality } from "../src/lib/quality-control";
 import {
   buildComprarVsAlquilarContent,
   buildComprarVsAlquilarFaqs,
@@ -11,6 +12,8 @@ import {
   buildCertificadoEnergeticoFaqs,
   buildMudanzaContent,
   buildMudanzaFaqs,
+  buildVenderViviendaContent,
+  buildVenderViviendaFaqs,
   combineUniqueContent,
 } from "../src/lib/content-builders";
 
@@ -62,6 +65,13 @@ for (const city of cities) {
   report(
     `/certificado-energetico/${city.slug}`,
     evaluateCityPageQuality(city, combineUniqueContent(buildCertificadoEnergeticoContent(city), buildCertificadoEnergeticoFaqs(city)))
+  );
+}
+
+for (const localidad of getAllVenderViviendaLocalidades()) {
+  report(
+    `/vender-vivienda/${localidad.slug}`,
+    evaluateVenderViviendaQuality(localidad, combineUniqueContent(buildVenderViviendaContent(localidad), buildVenderViviendaFaqs(localidad)))
   );
 }
 
