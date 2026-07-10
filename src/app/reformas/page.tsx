@@ -85,6 +85,7 @@ export default function ReformasHubPage() {
         heading="Herramientas recomendadas"
         items={[
           { href: "/recomendados/reformas-bricolaje", label: "Kit basico de herramientas para tu reforma" },
+          { href: "/blog/antes-de-reformar-herramientas-basicas", label: "5 herramientas que te ahorran llamadas al profesional" },
         ]}
       />
     </article>

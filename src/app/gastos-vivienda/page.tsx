@@ -62,6 +62,7 @@ export default function GastosViviendaHubPage() {
         heading="Productos recomendados"
         items={[
           { href: "/recomendados/ahorro-energetico", label: "Productos para ahorrar en la factura de luz y gas" },
+          { href: "/blog/como-ahorrar-en-la-factura-de-luz-sin-obras", label: "7 formas de bajar la factura de la luz sin hacer obra" },
         ]}
       />
     </article>

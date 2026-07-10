@@ -109,6 +109,7 @@ export default function CosteMudanzaRutaPage({ params }: Params) {
           { href: `/comprar-vs-alquilar/${origin.slug}`, label: `Comprar vs alquilar en ${origin.name}` },
           { href: `/comprar-vs-alquilar/${destination.slug}`, label: `Comprar vs alquilar en ${destination.name}` },
           { href: "/recomendados/mudanza", label: "Material de embalaje recomendado" },
+          { href: "/blog/checklist-mudanza-que-necesitas", label: "Checklist de mudanza: todo lo que necesitas" },
         ]}
       />
 

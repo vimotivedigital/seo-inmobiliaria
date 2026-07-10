@@ -30,6 +30,18 @@ const STATIC_EDITORIAL_PATHS = [
   "/hipoteca-calculadora",
   "/metodologia",
   "/sobre-nosotros",
+  "/politica-cookies",
+  "/aviso-legal",
+  "/recomendados",
+  "/recomendados/reformas-bricolaje",
+  "/recomendados/mudanza",
+  "/recomendados/ahorro-energetico",
+  "/recomendados/organizacion-hogar",
+  "/blog",
+  "/blog/antes-de-reformar-herramientas-basicas",
+  "/blog/checklist-mudanza-que-necesitas",
+  "/blog/como-ahorrar-en-la-factura-de-luz-sin-obras",
+  "/blog/organizar-piso-alquiler-sin-taladrar",
 ];
 
 /**

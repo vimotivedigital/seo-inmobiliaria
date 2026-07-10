@@ -91,6 +91,7 @@ export default function AlquilerHubPage() {
         heading="Para tu piso de alquiler"
         items={[
           { href: "/recomendados/organizacion-hogar", label: "Productos sin obra, ideales para alquiler" },
+          { href: "/blog/organizar-piso-alquiler-sin-taladrar", label: "Como organizar un piso de alquiler sin agujerear las paredes" },
         ]}
       />
     </article>
