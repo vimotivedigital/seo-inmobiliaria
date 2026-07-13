@@ -9,6 +9,9 @@ export interface AffiliateProduct {
   asin: string;
   name: string;
   description: string;
+  /** Ruta en /public a la foto de producto (real, no de stock). Opcional:
+   * si falta, la tarjeta cae de nuevo al icono generico. */
+  image?: string;
 }
 
 export interface AffiliateCategory {

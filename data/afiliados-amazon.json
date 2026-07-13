@@ -8,27 +8,32 @@
       {
         "asin": "B07V3TD5Q7",
         "name": "Amazon Basics Caja de herramientas para el hogar (173 piezas)",
-        "description": "Kit completo de uso general: destornilladores, llaves, alicates y consumibles basicos para la mayoria de arreglos domesticos sin tener que comprar cada herramienta por separado."
+        "description": "Kit completo de uso general: destornilladores, llaves, alicates y consumibles basicos para la mayoria de arreglos domesticos sin tener que comprar cada herramienta por separado.",
+        "image": "/images/productos/caja-herramientas-amazon-basics.jpg"
       },
       {
         "asin": "B07Q5TFB74",
         "name": "Medidor de humedad digital para madera, obra y paredes",
-        "description": "Util antes de pintar o reformar una zona con sospecha de humedad: detecta el nivel de humedad en madera, ladrillo o paneles de yeso antes de tapar el problema con pintura."
+        "description": "Util antes de pintar o reformar una zona con sospecha de humedad: detecta el nivel de humedad en madera, ladrillo o paneles de yeso antes de tapar el problema con pintura.",
+        "image": "/images/productos/medidor-humedad.jpg"
       },
       {
         "asin": "B00Z6IJ7MS",
         "name": "Bosch PSB 1800 LI-2 — Taladro percutor a bateria (18V, con maletin)",
-        "description": "Taladro percutor inalambrico de una marca de referencia en bricolaje domestico, con dos baterias incluidas para no quedarte a medias en una tarea."
+        "description": "Taladro percutor inalambrico de una marca de referencia en bricolaje domestico, con dos baterias incluidas para no quedarte a medias en una tarea.",
+        "image": "/images/productos/taladro-bosch-psb-1800.jpg"
       },
       {
         "asin": "B003IQJULS",
         "name": "Zircon StudSensor e50 — Detector de vigas y cables",
-        "description": "Localiza vigas, montantes y cableado antes de taladrar una pared, para colgar estanterias o muebles de forma segura sin sorpresas."
+        "description": "Localiza vigas, montantes y cableado antes de taladrar una pared, para colgar estanterias o muebles de forma segura sin sorpresas.",
+        "image": "/images/productos/zircon-studsensor-e50.jpg"
       },
       {
         "asin": "B082MWJYZK",
         "name": "Set completo de rodillos y minirodillos de pintura",
-        "description": "Kit de rodillos de distintos tamanos para repintar paredes y rincones antes o despues de una reforma, sin tener que comprar cada accesorio suelto."
+        "description": "Kit de rodillos de distintos tamanos para repintar paredes y rincones antes o despues de una reforma, sin tener que comprar cada accesorio suelto.",
+        "image": "/images/productos/rodillos-pintura.jpg"
       }
     ]
   },
@@ -41,27 +46,32 @@
       {
         "asin": "B0BDF5JCWF",
         "name": "Pack de cajas de carton reforzado para mudanza (50x30x30cm, 10 unidades)",
-        "description": "Cajas de carton reforzado en un tamano manejable, pensadas para cargar sin que se rompan ni pesen demasiado para levantarlas."
+        "description": "Cajas de carton reforzado en un tamano manejable, pensadas para cargar sin que se rompan ni pesen demasiado para levantarlas.",
+        "image": "/images/productos/cajas-carton-mudanza.jpg"
       },
       {
         "asin": "B000WL2YOC",
         "name": "Scotch — Dispensador de cinta de embalar (H180)",
-        "description": "Dispensador de cinta de una mano para cerrar cajas rapido sin pelearte con el rollo suelto durante horas de embalaje."
+        "description": "Dispensador de cinta de una mano para cerrar cajas rapido sin pelearte con el rollo suelto durante horas de embalaje.",
+        "image": "/images/productos/dispensador-cinta-scotch.jpg"
       },
       {
         "asin": "B0BVRXBC7M",
         "name": "Rollo de plastico de burbujas para embalaje (20m x 30cm)",
-        "description": "Proteccion para vajilla, cristaleria y objetos fragiles durante el transporte, la partida que mas se rompe en una mudanza mal preparada."
+        "description": "Proteccion para vajilla, cristaleria y objetos fragiles durante el transporte, la partida que mas se rompe en una mudanza mal preparada.",
+        "image": "/images/productos/plastico-burbujas.jpg"
       },
       {
         "asin": "B06X6D5G2P",
         "name": "Correas de elevacion para transporte de muebles (2 personas, hasta 300kg)",
-        "description": "Reparten el peso de muebles y electrodomesticos entre dos personas al cargarlos, para mover armarios o sofas sin lesionarte la espalda."
+        "description": "Reparten el peso de muebles y electrodomesticos entre dos personas al cargarlos, para mover armarios o sofas sin lesionarte la espalda.",
+        "image": "/images/productos/correas-elevacion.jpg"
       },
       {
         "asin": "B07RSCK4XS",
         "name": "Amazon Basics — Bolsas de almacenamiento al vacio (12 unidades)",
-        "description": "Comprimen ropa de cama, edredones y textiles para que ocupen una fraccion del volumen en la caja o el maletero durante la mudanza."
+        "description": "Comprimen ropa de cama, edredones y textiles para que ocupen una fraccion del volumen en la caja o el maletero durante la mudanza.",
+        "image": "/images/productos/bolsas-vacio-amazon-basics.jpg"
       }
     ]
   },
@@ -74,27 +84,32 @@
       {
         "asin": "B07K49G5WY",
         "name": "Google Nest Thermostat E — Termostato inteligente",
-        "description": "Programa la calefaccion segun tus horarios reales en casa en vez de dejarla encendida todo el dia, uno de los cambios con mayor impacto en la factura de gas."
+        "description": "Programa la calefaccion segun tus horarios reales en casa en vez de dejarla encendida todo el dia, uno de los cambios con mayor impacto en la factura de gas.",
+        "image": "/images/productos/termostato-google-nest.jpg"
       },
       {
         "asin": "B0DLB2Z1R3",
         "name": "Burlete autoadhesivo para puertas y ventanas (3,5m)",
-        "description": "Sella las rendijas por las que se escapa el calor en puertas y ventanas correderas, una de las perdidas de energia mas comunes y mas baratas de arreglar."
+        "description": "Sella las rendijas por las que se escapa el calor en puertas y ventanas correderas, una de las perdidas de energia mas comunes y mas baratas de arreglar.",
+        "image": "/images/productos/burlete-ventana.jpg"
       },
       {
         "asin": "B0DS659BZ9",
         "name": "Panel reflectante para radiador (100x70cm)",
-        "description": "Se coloca detras del radiador para reflejar el calor hacia la habitacion en vez de perderlo por la pared, especialmente util en paredes exteriores sin aislar."
+        "description": "Se coloca detras del radiador para reflejar el calor hacia la habitacion en vez de perderlo por la pared, especialmente util en paredes exteriores sin aislar.",
+        "image": "/images/productos/panel-reflectante-radiador.jpg"
       },
       {
         "asin": "B0872PFLJ5",
         "name": "Enchufe inteligente Wi-Fi con medicion de consumo (pack de 4)",
-        "description": "Muestra cuanto consume cada aparato conectado, para identificar que electrodomesticos disparan realmente tu factura antes de cambiar de tarifa."
+        "description": "Muestra cuanto consume cada aparato conectado, para identificar que electrodomesticos disparan realmente tu factura antes de cambiar de tarifa.",
+        "image": "/images/productos/enchufe-inteligente-wifi.jpg"
       },
       {
         "asin": "B01KHIM7OG",
         "name": "Philips — Bombillas LED E27, 8W equivalente a 60W (pack de 6)",
-        "description": "Cambio basico y barato de bombillas incandescentes o halogenas por LED, con ahorro directo y sin ninguna instalacion especial."
+        "description": "Cambio basico y barato de bombillas incandescentes o halogenas por LED, con ahorro directo y sin ninguna instalacion especial.",
+        "image": "/images/productos/bombilla-led-philips.jpg"
       }
     ]
   },
@@ -107,17 +122,20 @@
       {
         "asin": "B07MWT2GL7",
         "name": "IKEA Fixa — Kit de herramientas de 17 piezas para el hogar",
-        "description": "Kit compacto pensado para montar muebles de embalaje plano al mudarte, sin tener que comprar un set de herramientas completo para un par de tornillos."
+        "description": "Kit compacto pensado para montar muebles de embalaje plano al mudarte, sin tener que comprar un set de herramientas completo para un par de tornillos.",
+        "image": "/images/productos/ikea-fixa-kit-herramientas.jpg"
       },
       {
         "asin": "B01N1M8XY5",
         "name": "mDesign — Perchero de puerta con 5 ganchos dobles (sin taladro)",
-        "description": "Se cuelga del marco de la puerta sin hacer agujeros, ideal para pisos de alquiler donde no puedes (o no quieres) taladrar las paredes."
+        "description": "Se cuelga del marco de la puerta sin hacer agujeros, ideal para pisos de alquiler donde no puedes (o no quieres) taladrar las paredes.",
+        "image": "/images/productos/mdesign-perchero-puerta.jpg"
       },
       {
         "asin": "B07FFN2HN6",
         "name": "Canaletas adhesivas organizadoras de cables (pack de 9)",
-        "description": "Ocultan y ordenan los cables de la tele, el router o el escritorio, para que el salon recien amueblado no parezca un nido de cables."
+        "description": "Ocultan y ordenan los cables de la tele, el router o el escritorio, para que el salon recien amueblado no parezca un nido de cables.",
+        "image": "/images/productos/canaletas-cables.jpg"
       },
       {
         "asin": "B0D7HCR5PB",
@@ -127,7 +145,8 @@
       {
         "asin": "B08L8ZV8PY",
         "name": "VOUNOT — Set de 2 felpudos de entrada antideslizantes",
-        "description": "Un detalle sencillo para rematar la entrada de tu piso nuevo, resistente al agua y facil de lavar."
+        "description": "Un detalle sencillo para rematar la entrada de tu piso nuevo, resistente al agua y facil de lavar.",
+        "image": "/images/productos/felpudos-vounot.jpg"
       }
     ]
   }
