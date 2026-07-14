@@ -208,6 +208,15 @@ cumplimiento:
   rate limiting best-effort en memoria, envio por email via Resend
   (`RESEND_API_KEY`/`LEAD_NOTIFICATION_EMAIL`), y una copia de auditoria en
   `data/leads-audit.jsonl` (gitignored).
+- **El SDK de Resend no lanza excepcion en errores de la API** (dominio no
+  verificado, remitente invalido, etc.) -- devuelve `{ data, error }`. El
+  route handler comprueba explicitamente ese `error`; si no se comprobara,
+  un fallo de envio se reportaria como exito silenciosamente (esto ocurrio
+  de verdad durante el desarrollo: `tipofijo.com` no estaba verificado en
+  Resend y el endpoint devolvia `200 ok` sin haber enviado nada). Mientras no
+  se verifique un dominio propio en Resend, usa el remitente sandbox
+  (`onboarding@resend.dev`, ver `.env.example`), que solo entrega al email
+  de la cuenta de Resend.
 - **Limite conocido de la auditoria local**: `data/leads-audit.jsonl` solo es
   fiable en local/`next start` con disco persistente. En Vercel el sistema de
   ficheros es de solo lectura fuera de `/tmp`, y `/tmp` no persiste entre

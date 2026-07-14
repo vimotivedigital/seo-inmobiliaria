@@ -52,7 +52,11 @@ export async function POST(request: NextRequest) {
   if (RESEND_API_KEY && LEAD_NOTIFICATION_EMAIL) {
     try {
       const resend = new Resend(RESEND_API_KEY);
-      await resend.emails.send({
+      // El SDK de Resend NO lanza excepcion en errores de la API (dominio no
+      // verificado, remitente invalido, etc.) -- devuelve { data, error }.
+      // Hay que comprobar `error` explicitamente o un fallo de envio se
+      // reporta como exito silenciosamente.
+      const { error } = await resend.emails.send({
         from: RESEND_FROM_EMAIL,
         to: LEAD_NOTIFICATION_EMAIL,
         replyTo: record.email,
@@ -73,6 +77,13 @@ export async function POST(request: NextRequest) {
           .filter(Boolean)
           .join("\n"),
       });
+      if (error) {
+        console.error("[leads] Resend rechazo el envio del email del lead:", error);
+        return NextResponse.json(
+          { ok: false, error: "No se pudo enviar tu solicitud. Intentalo de nuevo en unos minutos." },
+          { status: 502 }
+        );
+      }
     } catch (err) {
       console.error("[leads] Fallo al enviar el email del lead via Resend:", err);
       return NextResponse.json(
