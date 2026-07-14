@@ -47,6 +47,13 @@ const STATIC_EDITORIAL_PATHS = [
   "/blog/organizar-piso-alquiler-sin-taladrar",
   "/vender-vivienda",
   "/politica-privacidad",
+  "/inversion-inmobiliaria",
+  "/inversion-inmobiliaria/comparativa",
+  "/inversion-inmobiliaria/urbanitae",
+  "/inversion-inmobiliaria/civislend",
+  "/inversion-inmobiliaria/wecity",
+  "/inversion-inmobiliaria/crowpire",
+  "/inversion-inmobiliaria/stockcrowd-in",
 ];
 
 /**

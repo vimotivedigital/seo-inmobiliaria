@@ -21,6 +21,7 @@ export function Footer() {
             <ul className="space-y-1">
               <li><Link href="/hipoteca-calculadora" className="hover:text-brand-700 dark:hover:text-brand-400">Calculadora de hipoteca</Link></li>
               <li><Link href="/vender-vivienda" className="hover:text-brand-700 dark:hover:text-brand-400">Vender vivienda</Link></li>
+              <li><Link href="/inversion-inmobiliaria" className="hover:text-brand-700 dark:hover:text-brand-400">Inversion inmobiliaria</Link></li>
               <li><Link href="/recomendados" className="hover:text-brand-700 dark:hover:text-brand-400">Recomendados</Link></li>
               <li><Link href="/blog" className="hover:text-brand-700 dark:hover:text-brand-400">Blog</Link></li>
             </ul>

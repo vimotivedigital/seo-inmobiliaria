@@ -91,6 +91,7 @@ export default function ComprarViviendaHubPage() {
         items={[
           { href: "/recomendados/organizacion-hogar", label: "Productos para organizar tu piso nuevo" },
           { href: "/vender-vivienda", label: "¿Vendes para comprar? Valora tu vivienda actual gratis" },
+          { href: "/inversion-inmobiliaria", label: "¿No quieres comprar una vivienda entera? Alternativas de inversion inmobiliaria" },
         ]}
       />
     </article>

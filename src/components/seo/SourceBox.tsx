@@ -3,7 +3,11 @@ import type { SourcedValue } from "@/types/data";
 
 interface SourceBoxProps {
   title?: string;
-  items: { label: string; data: SourcedValue }[];
+  /** `data` acepta cualquier tipo de `value` (SourceBox nunca renderiza
+   * `.value` -- solo source/source_url/fecha/confianza/nota/fuentes -- asi
+   * que sirve igual para un SourcedValue<number> que para uno de texto,
+   * como la rentabilidad declarada en /inversion-inmobiliaria). */
+  items: { label: string; data: SourcedValue<unknown> }[];
   methodologyHref?: string;
 }
 

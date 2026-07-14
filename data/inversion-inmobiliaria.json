@@ -1,0 +1,181 @@
+[
+  {
+    "slug": "urbanitae",
+    "name": "Urbanitae",
+    "legalName": "Urbanitae Real Estate Platform, S.L.",
+    "website": "https://urbanitae.com",
+    "regulatedByCnmv": true,
+    "psfpRegistration": {
+      "numero": 4,
+      "nif": "B88393962",
+      "fecha_registro": "2022-12-23",
+      "source": "CNMV - Registro de Proveedores de Servicios de Financiacion Participativa (PSFP)",
+      "source_url": "https://www.cnmv.es/portal/consultas/servicios-financiacion-participativa/proveedor?nreg=4&nif=B88393962&lang=es",
+      "last_updated": "2026-07-14"
+    },
+    "models": ["equity", "deuda", "alquiler"],
+    "modelDescription": "Urbanitae ofrece tres tipos de proyecto con riesgos distintos: equity (el inversor entra como socio en la sociedad que compra, reforma y vende el inmueble, cobrando la plusvalia al final), deuda/crowdlending (el inversor presta dinero al promotor con garantia hipotecaria de primer rango y cobra un interes fijo pactado) y alquiler (el inversor participa en un inmueble que genera rentas periodicas antes de venderse). Cada modelo tiene un perfil de riesgo y de liquidez distinto -- no es lo mismo ser socio del proyecto que ser su acreedor.",
+    "minInvestment": {
+      "value": 500,
+      "source": "Urbanitae - Preguntas frecuentes",
+      "source_url": "https://urbanitae.com/es/faqs/",
+      "last_updated": "2026-07-14",
+      "confidence": "estimado",
+      "nota": "Cifra publicada por la propia plataforma en su FAQ oficial; puede variar segun el proyecto concreto (inversiones en multiplos de 10 EUR)."
+    },
+    "liquidity": "Sin mercado secundario ni salida anticipada: el capital queda inmovilizado hasta la venta del inmueble (equity/alquiler) o el vencimiento del prestamo (deuda). Los inversores no expertos disponen de un periodo de reflexion de 4 dias tras invertir para revocar la orden.",
+    "historicalReturn": {
+      "value": "Objetivo declarado: 4-7% anual en proyectos de alquiler; 13-18% anual en proyectos de equity (plazos de 12-36 meses). Los proyectos de deuda fijan el interes en el propio contrato de prestamo.",
+      "source": "Urbanitae - Preguntas frecuentes",
+      "source_url": "https://urbanitae.com/es/faqs/",
+      "last_updated": "2026-07-14",
+      "confidence": "estimado",
+      "nota": "Son objetivos de rentabilidad declarados por la propia plataforma para cada estrategia, no un historico auditado de forma independiente. La propia Urbanitae advierte: \"como en toda inversion, la rentabilidad no esta garantizada\". Rentabilidades pasadas o proyectadas no garantizan resultados futuros."
+    },
+    "specificRisks": [
+      "Riesgo de perdida total o parcial del capital si el proyecto no se ejecuta segun lo previsto o el promotor incurre en impago.",
+      "Iliquidez total: sin mercado secundario, el dinero invertido no se puede recuperar antes de la venta del inmueble o el vencimiento del prestamo.",
+      "En proyectos de equity, el inversor asume el riesgo empresarial del promotor (sobrecostes, retrasos, caida del precio de venta), no solo el riesgo de credito de un prestamo."
+    ]
+  },
+  {
+    "slug": "civislend",
+    "name": "Civislend",
+    "legalName": "Civislend PSFP, S.A.",
+    "website": "https://www.civislend.com",
+    "regulatedByCnmv": true,
+    "psfpRegistration": {
+      "numero": 8,
+      "nif": "A87625778",
+      "fecha_registro": "2023-10-20",
+      "source": "CNMV - Registro de Proveedores de Servicios de Financiacion Participativa (PSFP)",
+      "source_url": "https://www.cnmv.es/portal/consultas/servicios-financiacion-participativa/proveedor?nreg=8&nif=A87625778&lang=es",
+      "last_updated": "2026-07-14"
+    },
+    "models": ["deuda"],
+    "modelDescription": "Civislend es una plataforma de crowdlending inmobiliario: varios inversores financian, mediante un contrato de prestamo, a promotores profesionales que necesitan capital para un proyecto residencial. El prestamo lleva garantia hipotecaria sobre el inmueble. A diferencia de un modelo de equity, el inversor no participa en las plusvalias del proyecto: su retorno es el interes pactado en el contrato de prestamo, ni mas ni menos (salvo impago).",
+    "minInvestment": {
+      "value": 250,
+      "source": "Civislend - web oficial",
+      "source_url": "https://www.civislend.com/",
+      "last_updated": "2026-07-14",
+      "confidence": "estimado",
+      "nota": "Cifra publicada por la propia plataforma en su web oficial."
+    },
+    "liquidity": "Riesgo de liquidez explicito reconocido por la propia plataforma: no existe garantia de poder recuperar el capital de forma anticipada antes del vencimiento del prestamo.",
+    "historicalReturn": {
+      "value": "Rentabilidad media ponderada declarada del 11,08% anual en 2025; proyectos individuales publicados entre 12,25% y 15% de rentabilidad total a 12-15 meses.",
+      "source": "Civislend - web oficial",
+      "source_url": "https://www.civislend.com/",
+      "last_updated": "2026-07-14",
+      "confidence": "estimado",
+      "nota": "Cifra agregada declarada por la propia plataforma, no auditada de forma independiente. La propia Civislend advierte: \"las rentabilidades pasadas no constituyen un indicador fiable de las rentabilidades futuras\"."
+    },
+    "specificRisks": [
+      "Riesgo de impago del promotor: aunque el prestamo tenga garantia hipotecaria, ejecutar esa garantia lleva tiempo y coste, y no garantiza recuperar el 100% del capital.",
+      "Iliquidez: riesgo de liquidez reconocido explicitamente por la propia plataforma para recuperar el capital antes del vencimiento.",
+      "Concentracion sectorial: al operar en un unico modelo (deuda inmobiliaria), el inversor esta expuesto por completo al ciclo del sector de la construccion y promocion en Espana."
+    ]
+  },
+  {
+    "slug": "wecity",
+    "name": "Wecity",
+    "legalName": "Cityprive P.F.P., S.L.U.",
+    "website": "https://www.wecity.com",
+    "regulatedByCnmv": true,
+    "psfpRegistration": {
+      "numero": 9,
+      "nif": "B88317003",
+      "fecha_registro": "2023-10-20",
+      "source": "CNMV - Registro de Proveedores de Servicios de Financiacion Participativa (PSFP)",
+      "source_url": "https://www.cnmv.es/portal/consultas/servicios-financiacion-participativa/proveedor?nreg=9&nif=B88317003&lang=es",
+      "last_updated": "2026-07-14"
+    },
+    "models": ["equity", "deuda", "alquiler"],
+    "modelDescription": "Wecity (nombre legal Cityprive P.F.P., S.L.U.) ofrece proyectos de capital -- alquiler mas venta, o compra-reforma-venta buscando plusvalia -- y proyectos de deuda, con interes fijo pactado o prestamos participativos cuyo retorno depende del resultado del proyecto. Publica proyectos tanto nacionales como internacionales.",
+    "minInvestmentNota": "No existe una cifra unica: cada promotor fija la inversion minima especifica de su proyecto. Los inversores no acreditados estan ademas sujetos a los limites regulatorios generales del ECSPR (hasta 3.000 EUR por proyecto o 10.000 EUR/anio en el conjunto de plataformas, salvo que se acredite mayor capacidad financiera).",
+    "liquidity": "Sin mercado secundario. La plataforma no menciona ningun mecanismo de salida anticipada: la liquidez depende del tipo de proyecto (proyectos de plusvalia entre 12-36 meses, proyectos de alquiler en torno a 3 anios, prestamos segun el plan de negocio del promotor).",
+    "historicalReturnNota": "Wecity no publica una cifra agregada de rentabilidad historica en su FAQ oficial; se limita a advertir que \"las rentabilidades de las oportunidades publicadas en wecity no estan garantizadas. Rentabilidades pasadas no garantizan resultados futuros\". No se ha encontrado una fuente primaria con un dato agregado verificable, por lo que se deja como no verificado en vez de estimarlo.",
+    "specificRisks": [
+      "Riesgo de perdida de capital en proyectos de equity si el proyecto no genera la plusvalia o la renta esperada.",
+      "Iliquidez: sin mercado secundario ni ventana de salida anticipada.",
+      "En prestamos participativos, el retorno esta ligado al exito del proyecto, por lo que el riesgo se acerca mas al de un socio que al de un acreedor con interes fijo garantizado."
+    ]
+  },
+  {
+    "slug": "crowpire",
+    "name": "Crowpire (antes Housers)",
+    "legalName": "Crowpire, S.L.",
+    "website": "https://www.crowpire.com",
+    "regulatedByCnmv": true,
+    "psfpRegistration": {
+      "numero": 13,
+      "nif": "B87269999",
+      "fecha_registro": "2023-11-10",
+      "source": "CNMV - Registro de Proveedores de Servicios de Financiacion Participativa (PSFP)",
+      "source_url": "https://www.cnmv.es/portal/consultas/servicios-financiacion-participativa/proveedor?nreg=13&nif=B87269999&lang=es",
+      "last_updated": "2026-07-14"
+    },
+    "models": ["equity", "deuda"],
+    "modelDescription": "Crowpire es el nuevo nombre comercial de Housers Global Properties tras su relanzamiento en febrero de 2026, bajo la misma entidad juridica registrada en la CNMV. Historicamente Housers ofrecia proyectos de equity (participacion en la propiedad) y de deuda (prestamo al promotor); el nuevo relanzamiento se centra en crowdfunding y crowdlending inmobiliario, sin que la plataforma haya publicado todavia (en el contenido accesible de su web en la fecha de esta revision) un desglose detallado y verificable de las condiciones de cada modalidad tras el cambio de marca.",
+    "minInvestmentNota": "No verificado: la web de relanzamiento de Crowpire (activa desde febrero de 2026) no publica de forma accesible una cifra de inversion minima en el momento de esta revision. Confirma la cifra actual directamente en crowpire.com antes de invertir.",
+    "liquidity": "No verificado con una fuente propia de la plataforma tras el relanzamiento; historicamente (como Housers) no ofrecia mercado secundario de facto para la mayoria de proyectos.",
+    "historicalReturnNota": "Segun nota de prensa del relanzamiento (no la propia web de la plataforma), Crowpire declara una rentabilidad media anual del entorno del 7% en proyectos historicos de Housers, con el objetivo declarado de alcanzar el 10%, sobre una base de unos 150 millones de euros financiados y mas de 72 millones ya retornados a inversores. Al proceder de una nota de prensa y no de una pagina propia de datos historicos de la plataforma, esta cifra se trata con mas cautela que el resto de datos de esta comparativa: confirmar directamente en crowpire.com antes de tomar cualquier decision.",
+    "specificRisks": [
+      "Historial regulatorio: la entidad (entonces como Housers Global Properties) fue sancionada por la CNMV en 2019 con 215.000 EUR por varias infracciones muy graves, y en 2021 con 130.000 EUR por vulnerar el principio de neutralidad; esta segunda sancion fue anulada por la Audiencia Nacional en 2024 tras un recurso de la propia empresa.",
+      "Cambio de marca reciente (febrero de 2026): al ser un relanzamiento muy reciente, hay menos historial publico verificable sobre el funcionamiento de la plataforma bajo su nueva marca y estructura que sobre el resto de plataformas de esta comparativa.",
+      "Riesgo de perdida de capital e iliquidez, comunes a todo el sector de crowdfunding inmobiliario."
+    ],
+    "sanctions": [
+      {
+        "anio": 2019,
+        "descripcion": "Sancion de la CNMV a Housers Global Properties por dos infracciones muy graves y una grave en su actividad como plataforma de financiacion participativa inmobiliaria.",
+        "importe_eur": 215000,
+        "estado": "Firme",
+        "source": "FACUA - La CNMV multa con 215.000 euros a Housers Global Properties",
+        "source_url": "https://facua.org/noticias/la-cnmv-multa-con-215-000-euros-a-housers-global-properties-por-cometer-varias-infracciones-muy-graves/"
+      },
+      {
+        "anio": 2021,
+        "descripcion": "Sancion de la CNMV a Housers por vulnerar el principio de neutralidad y las normas para minimizar conflictos de interes.",
+        "importe_eur": 130000,
+        "estado": "Anulada por la Audiencia Nacional en 2024 tras recurso de la empresa",
+        "source": "El Espanol/Invertia - La Audiencia Nacional da la razon a Housers frente a la multa de 130.000 euros que le impuso la CNMV en 2021",
+        "source_url": "https://www.elespanol.com/invertia/empresas/20240220/audiencia-nacional-da-razon-housers-frente-multa-euros-impuso-cnmv/834166776_0.html"
+      }
+    ],
+    "rebrandNote": "Housers Global Properties se relanzo comercialmente como Crowpire en febrero de 2026, manteniendo el mismo registro en la CNMV (PSFP num. 13)."
+  },
+  {
+    "slug": "stockcrowd-in",
+    "name": "StockCrowd IN",
+    "legalName": "StockCrowd Platform, S.L.",
+    "website": "https://www.stockcrowdin.com",
+    "regulatedByCnmv": true,
+    "psfpRegistration": {
+      "numero": 19,
+      "nif": "B66647306",
+      "fecha_registro": "2023-12-15",
+      "source": "CNMV - Registro de Proveedores de Servicios de Financiacion Participativa (PSFP)",
+      "source_url": "https://www.cnmv.es/portal/consultas/servicios-financiacion-participativa/proveedor?nreg=19&nif=B66647306&lang=es",
+      "last_updated": "2026-07-14"
+    },
+    "models": ["equity", "deuda"],
+    "modelDescription": "StockCrowd IN (marca comercial de StockCrowd Platform, S.L.) ofrece dos estructuras principales: equity (ampliaciones de capital y prestamos participativos, donde el retorno depende del resultado del proyecto) y deuda (prestamos a interes fijo y prestamos participativos a promotores inmobiliarios). El peso de cada modalidad varia segun el proyecto publicado en cada momento.",
+    "minInvestmentNota": "No verificado: la inversion minima varia por campania (la propia plataforma la muestra proyecto a proyecto) y no se ha encontrado una cifra base fija y estable publicada de forma general.",
+    "liquidity": "Riesgo de falta de liquidez de la inversion reconocido explicitamente por la propia plataforma como factor de riesgo de sus proyectos de financiacion participativa.",
+    "historicalReturn": {
+      "value": "Cifras agregadas declaradas: mas de 151 millones de euros financiados en 936 proyectos, con mas de 108 millones de euros ya devueltos a inversores y un plazo medio de 13 meses por proyecto (TIR de ejemplo mostrada para campanias concretas, no una media agregada unica).",
+      "source": "StockCrowd IN - web oficial",
+      "source_url": "https://www.stockcrowdin.com/",
+      "last_updated": "2026-07-14",
+      "confidence": "estimado",
+      "nota": "Cifras acumuladas declaradas por la propia plataforma, no auditadas de forma independiente. La propia StockCrowd IN advierte: \"las cifras mostradas se refieren al pasado. Rentabilidades y resultados pasados no garantizan rentabilidades futuras\"."
+    },
+    "specificRisks": [
+      "Riesgo de perdida de capital, mayor en los proyectos de equity/prestamo participativo (el retorno depende del resultado del proyecto) que en los de interes fijo.",
+      "Riesgo de falta de liquidez reconocido explicitamente por la propia plataforma.",
+      "Al operar con dos modelos distintos (deuda y equity) en la misma plataforma, es especialmente importante revisar en cada proyecto concreto cual de los dos aplica antes de invertir, ya que el riesgo no es el mismo."
+    ]
+  }
+]
