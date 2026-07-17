@@ -45,7 +45,7 @@ export default function HipotecasHubPage() {
         variable de referencia (euribor + diferencial) cercano al{" "}
         {formatPercent(rates.avg_variable_rate.value)}. El fijo da certeza de cuota durante toda
         la vida del prestamo; el variable suele partir mas bajo pero se mueve con el mercado. La
-        eleccion depende de tu aversion al riesgo y del plazo: a mas anios de hipoteca, mayor es
+        eleccion depende de tu aversion al riesgo y del plazo: a mas años de hipoteca, mayor es
         el impacto potencial de una subida del Euribor sobre un variable.
       </p>
 
@@ -59,7 +59,7 @@ export default function HipotecasHubPage() {
           entidades financia hasta un {rates.avg_ltv.value}% del valor de tasacion en primera
           vivienda.
         </li>
-        <li>Estabilidad laboral: contrato indefinido o, en autonomos, al menos 2 anios de actividad.</li>
+        <li>Estabilidad laboral: contrato indefinido o, en autonomos, al menos 2 años de actividad.</li>
         <li>Historial crediticio limpio en ficheros de morosidad (ASNEF, RAI).</li>
       </ul>
 

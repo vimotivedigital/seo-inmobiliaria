@@ -35,7 +35,7 @@ function computeMonthlyPayment(principal: number, annualRatePct: number, years: 
  *    (El capital amortizado NO cuenta como coste: se convierte en patrimonio).
  *  - Inquilino: alquiler pagado, menos la rentabilidad obtenida al invertir
  *    la entrada + gastos de compra que el comprador si ha desembolsado.
- * El punto de equilibrio es el primer anio en que el coste acumulado del
+ * El punto de equilibrio es el primer año en que el coste acumulado del
  * comprador queda por debajo del coste acumulado del inquilino.
  */
 export function RentVsBuyCalculator({ defaultPrice, defaultRentMonthly, mortgageRatePct, purchaseCostsPct }: Props) {
@@ -121,11 +121,11 @@ export function RentVsBuyCalculator({ defaultPrice, defaultRentMonthly, mortgage
           <p className="flex items-center gap-2 text-lg text-slate-800 dark:text-slate-100">
             <TrendingUp size={20} className="text-brand-600 dark:text-brand-400" />
             Con estos parametros, comprar sale a cuenta a partir del{" "}
-            <strong className="text-brand-700 dark:text-brand-400">anio {breakevenRow.year}</strong>.
+            <strong className="text-brand-700 dark:text-brand-400">año {breakevenRow.year}</strong>.
           </p>
         ) : (
           <p className="text-lg text-slate-800 dark:text-slate-100">
-            En un horizonte de {horizonYears} anios, alquilar + invertir la diferencia sale mas a
+            En un horizonte de {horizonYears} años, alquilar + invertir la diferencia sale mas a
             cuenta con estos parametros.
           </p>
         )}
@@ -146,7 +146,7 @@ export function RentVsBuyCalculator({ defaultPrice, defaultRentMonthly, mortgage
             { name: "Alquilar", color: "stroke-accent-500", points: rows.map((r) => r.renterCumulativeCost) },
           ]}
           highlightIndex={breakevenIndex >= 0 ? breakevenIndex : undefined}
-          highlightLabel={breakevenRow ? `Anio ${breakevenRow.year}` : undefined}
+          highlightLabel={breakevenRow ? `Año ${breakevenRow.year}` : undefined}
           formatValue={(v) => formatEur(v, 0)}
         />
         <ChartLegend
@@ -161,7 +161,7 @@ export function RentVsBuyCalculator({ defaultPrice, defaultRentMonthly, mortgage
         <table className="w-full text-sm">
           <thead>
             <tr className="border-b border-slate-200 text-left text-slate-500 dark:border-slate-700 dark:text-slate-400">
-              <th className="py-2 pr-4">Anio</th>
+              <th className="py-2 pr-4">Año</th>
               <th className="py-2 pr-4">Coste acumulado comprar</th>
               <th className="py-2">Coste acumulado alquilar</th>
             </tr>
@@ -179,7 +179,7 @@ export function RentVsBuyCalculator({ defaultPrice, defaultRentMonthly, mortgage
       </div>
 
       <label className="mt-4 block max-w-xs text-sm">
-        <span className="font-medium text-slate-700 dark:text-slate-200">Horizonte (anios)</span>
+        <span className="font-medium text-slate-700 dark:text-slate-200">Horizonte (años)</span>
         <input
           type="range"
           min={5}
@@ -188,7 +188,7 @@ export function RentVsBuyCalculator({ defaultPrice, defaultRentMonthly, mortgage
           onChange={(e) => setHorizonYears(Number(e.target.value))}
           className="mt-1 w-full accent-brand-600"
         />
-        <span className="text-xs text-slate-500 dark:text-slate-400">{horizonYears} anios</span>
+        <span className="text-xs text-slate-500 dark:text-slate-400">{horizonYears} años</span>
       </label>
     </div>
   );

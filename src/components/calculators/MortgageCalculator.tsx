@@ -58,7 +58,7 @@ function buildAmortizationSchedule(
 /**
  * Calculadora de hipoteca. Herramienta interactiva client-side: los
  * resultados NO generan una URL indexable por combinacion (evita el
- * patron /hipoteca/{pais}/{importe}/{interes}/{anios} que penalizan las
+ * patron /hipoteca/{pais}/{importe}/{interes}/{años} que penalizan las
  * Spam Updates). Vive en una unica pagina: /hipoteca-calculadora.
  */
 export function MortgageCalculator({ rates }: Props) {
@@ -92,7 +92,7 @@ export function MortgageCalculator({ rates }: Props) {
         </label>
 
         <label className="block">
-          <span className="text-sm font-medium text-slate-700 dark:text-slate-200">Plazo (anios)</span>
+          <span className="text-sm font-medium text-slate-700 dark:text-slate-200">Plazo (años)</span>
           <input
             type="number"
             min={5}
@@ -159,7 +159,7 @@ export function MortgageCalculator({ rates }: Props) {
 
       <div className="mt-6">
         <p className="mb-2 text-sm font-medium text-slate-700 dark:text-slate-200">
-          Intereses vs capital amortizado por anio
+          Intereses vs capital amortizado por año
         </p>
         <StackedBarChart
           labels={schedule.map((r) => r.year)}
@@ -183,7 +183,7 @@ export function MortgageCalculator({ rates }: Props) {
         className="mt-6 flex items-center gap-1 text-sm font-medium text-brand-700 hover:text-brand-800 dark:text-brand-400 dark:hover:text-brand-300"
       >
         <ChevronDown size={16} className={`transition-transform ${showSchedule ? "rotate-180" : ""}`} />
-        {showSchedule ? "Ocultar" : "Ver"} tabla de amortizacion por anios
+        {showSchedule ? "Ocultar" : "Ver"} tabla de amortizacion por años
       </button>
 
       {showSchedule && (
@@ -191,7 +191,7 @@ export function MortgageCalculator({ rates }: Props) {
           <table className="w-full text-sm">
             <thead>
               <tr className="border-b border-slate-200 text-left text-slate-500 dark:border-slate-700 dark:text-slate-400">
-                <th className="py-2 pr-4">Anio</th>
+                <th className="py-2 pr-4">Año</th>
                 <th className="py-2 pr-4">Intereses pagados</th>
                 <th className="py-2 pr-4">Capital amortizado</th>
                 <th className="py-2">Capital pendiente</th>

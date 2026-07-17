@@ -39,7 +39,7 @@ export default function AlquilerHubPage() {
 
       <h2>Lo esencial del contrato de alquiler</h2>
       <ul>
-        <li><strong>Duracion:</strong> minimo 5 anios si el arrendador es persona fisica (7 si es empresa), salvo pacto de menor duracion con prorroga obligatoria hasta esos minimos.</li>
+        <li><strong>Duracion:</strong> minimo 5 años si el arrendador es persona fisica (7 si es empresa), salvo pacto de menor duracion con prorroga obligatoria hasta esos minimos.</li>
         <li><strong>Fianza:</strong> un mes de renta en alquiler de vivienda habitual, deposito obligatorio en el organismo autonomico correspondiente.</li>
         <li><strong>Actualizacion de renta:</strong> vinculada a un indice de referencia (no libremente pactable al alza sin limite en zonas tensionadas).</li>
         <li><strong>Gastos:</strong> el IBI y los gastos de comunidad corresponden al propietario salvo pacto expreso en contrario.</li>
@@ -72,7 +72,7 @@ export default function AlquilerHubPage() {
           {
             question: "¿Puede el propietario subirme la renta cuando quiera?",
             answer:
-              "No. La actualizacion solo puede aplicarse una vez al anio y conforme al indice pactado en el contrato (nunca superior al IPC en zonas de mercado tensionado declaradas).",
+              "No. La actualizacion solo puede aplicarse una vez al año y conforme al indice pactado en el contrato (nunca superior al IPC en zonas de mercado tensionado declaradas).",
           },
           {
             question: "¿Que pasa si el propietario quiere vender el piso alquilado?",

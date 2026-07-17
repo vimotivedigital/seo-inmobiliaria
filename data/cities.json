@@ -8,7 +8,7 @@
     "rent_per_sqm": { "value": 17.8, "source": "Idealista - Informe de precios (media anuncios activos)", "last_updated": "2026-06-01", "confidence": "estimado" },
     "price_yoy_change": { "value": 8.1, "source": "Idealista - Informe de precios (variacion interanual)", "last_updated": "2026-06-01", "confidence": "estimado" },
     "search_volume_tier": "alto",
-    "local_context": "Madrid capital encadena varios anios de subidas por encima de la media nacional, con especial tension en distritos centrales (Centro, Chamberi, Salamanca) frente a la periferia sur, donde el precio por m2 puede ser hasta un 40% mas bajo."
+    "local_context": "Madrid capital encadena varios años de subidas por encima de la media nacional, con especial tension en distritos centrales (Centro, Chamberi, Salamanca) frente a la periferia sur, donde el precio por m2 puede ser hasta un 40% mas bajo."
   },
   {
     "slug": "barcelona",

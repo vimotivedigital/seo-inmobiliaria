@@ -32,10 +32,10 @@ export default function GastosViviendaHubPage() {
 
       <h2>Gastos anuales tipicos</h2>
       <ul>
-        <li><strong>IBI (Impuesto sobre Bienes Inmuebles):</strong> lo fija cada ayuntamiento sobre el valor catastral, normalmente entre el 0,4% y el 1,1% de dicho valor al anio.</li>
+        <li><strong>IBI (Impuesto sobre Bienes Inmuebles):</strong> lo fija cada ayuntamiento sobre el valor catastral, normalmente entre el 0,4% y el 1,1% de dicho valor al año.</li>
         <li><strong>Comunidad de propietarios:</strong> muy variable segun servicios (ascensor, portero, piscina); en pisos sin servicios adicionales suele rondar 30-60€/mes.</li>
-        <li><strong>Seguro de hogar:</strong> obligatorio si tienes hipoteca, entre 150-350€/anio segun cobertura y valor de reconstruccion.</li>
-        <li><strong>Mantenimiento:</strong> usa nuestra <Link href="/reformas">estimacion de coste de reforma</Link> como referencia para partidas puntuales grandes (cocina, bano); para mantenimiento general se suele presupuestar entre el 1% y el 1,5% del valor de la vivienda al anio.</li>
+        <li><strong>Seguro de hogar:</strong> obligatorio si tienes hipoteca, entre 150-350€/año segun cobertura y valor de reconstruccion.</li>
+        <li><strong>Mantenimiento:</strong> usa nuestra <Link href="/reformas">estimacion de coste de reforma</Link> como referencia para partidas puntuales grandes (cocina, bano); para mantenimiento general se suele presupuestar entre el 1% y el 1,5% del valor de la vivienda al año.</li>
       </ul>
 
       <Disclaimer />

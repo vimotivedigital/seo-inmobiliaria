@@ -76,7 +76,7 @@ export default function ReformasHubPage() {
           {
             question: "¿El IVA de la reforma es del 21% o del 10%?",
             answer:
-              "El 10% se aplica a reformas de vivienda habitual con mas de 2 anios de antiguedad, cuando el coste de materiales no supera el 40% de la base imponible. Fuera de esos requisitos se aplica el 21% general.",
+              "El 10% se aplica a reformas de vivienda habitual con mas de 2 años de antiguedad, cuando el coste de materiales no supera el 40% de la base imponible. Fuera de esos requisitos se aplica el 21% general.",
           },
         ]}
       />

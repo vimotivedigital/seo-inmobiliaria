@@ -89,7 +89,7 @@ export interface PrecioM2Entry {
 export interface MortgageRateSnapshot {
   /** Euribor a 12 meses, en %. Fuente oficial (Banco de Espana). */
   euribor_12m: SourcedValue;
-  /** Tipo medio de oferta fija a 20-30 anios, en %. Sin fuente oficial unica. */
+  /** Tipo medio de oferta fija a 20-30 años, en %. Sin fuente oficial unica. */
   avg_fixed_rate: SourcedValue;
   /** Tipo medio de oferta variable (euribor + diferencial medio), en %. Sin fuente oficial unica. */
   avg_variable_rate: SourcedValue;

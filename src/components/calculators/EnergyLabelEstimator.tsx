@@ -4,7 +4,7 @@ import { useMemo, useState } from "react";
 import { Zap } from "lucide-react";
 import { formatEur } from "@/lib/seo";
 
-/** kWh/m2/anio de consumo tipico por etiqueta energetica (vivienda plurifamiliar). */
+/** kWh/m2/año de consumo tipico por etiqueta energetica (vivienda plurifamiliar). */
 const CONSUMPTION_BY_LABEL: Record<string, number> = {
   A: 25,
   B: 45,

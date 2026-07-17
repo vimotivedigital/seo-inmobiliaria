@@ -50,11 +50,11 @@ export function buildComprarVsAlquilarFaqs(city: City): FaqItem[] {
   return [
     {
       question: `¿Es mas caro comprar que alquilar en ${city.name} ahora mismo?`,
-      answer: `Con un precio medio de ${formatEur(city.price_per_sqm.value)}/m2 y un alquiler medio de ${formatEur(city.rent_per_sqm.value)}/m2 al mes en ${city.name}, la respuesta depende del horizonte temporal: usa la calculadora de esta pagina para ver a partir de que anio comprar sale a cuenta con tus propios numeros.`,
+      answer: `Con un precio medio de ${formatEur(city.price_per_sqm.value)}/m2 y un alquiler medio de ${formatEur(city.rent_per_sqm.value)}/m2 al mes en ${city.name}, la respuesta depende del horizonte temporal: usa la calculadora de esta pagina para ver a partir de que año comprar sale a cuenta con tus propios numeros.`,
     },
     {
       question: `¿Como ha evolucionado el precio de la vivienda en ${city.name}?`,
-      answer: `El precio medio en ${city.name} ha variado un ${formatPercent(city.price_yoy_change.value)} en el ultimo anio segun datos de mercado (ver fuente en la caja "Sobre estos datos" de esta pagina). ${city.local_context}`,
+      answer: `El precio medio en ${city.name} ha variado un ${formatPercent(city.price_yoy_change.value)} en el ultimo año segun datos de mercado (ver fuente en la caja "Sobre estos datos" de esta pagina). ${city.local_context}`,
     },
   ];
 }
@@ -125,7 +125,7 @@ export function buildReformaContent(city: City, cost: ReformaCost): string {
     ? ` Para ${city.name} en concreto, Habitissimo publica ademas un presupuesto total tipico de reforma integral de entre ${formatEur(cost.total_project_range.value.low, 0)} y ${formatEur(cost.total_project_range.value.high, 0)} para un piso completo, un dato especifico de esta ciudad y no solo una extrapolacion del precio nacional por m2.`
     : ` Para ${city.name} no tenemos un desglose de presupuesto total especifico de la ciudad, asi que la referencia por m2 de esta pagina es la nacional.`;
 
-  return `Reformar un piso en Espana cuesta entre ${formatEur(cost.low.value)}/m2 en una reforma basica y ${formatEur(cost.high.value)}/m2 en una reforma integral con materiales de gama alta, segun datos de presupuestos reales agregados por Habitissimo (referencia nacional, no especifica de ${city.name}).${totalProjectNote} Antes de pedir presupuestos a empresas de reforma en ${city.name}, usa el calculo por m2 de esta pagina como punto de partida para negociar y detectar presupuestos fuera de mercado, tanto por exceso como por defecto. Ten en cuenta ademas que el coste por m2 no suele ser lineal: banios y cocinas (con fontaneria, azulejado e instalaciones) cuestan bastante mas por metro cuadrado que salones o dormitorios, por lo que dos pisos del mismo tamano pueden tener presupuestos muy distintos segun cuantas estancias humedas incluyan.`;
+  return `Reformar un piso en Espana cuesta entre ${formatEur(cost.low.value)}/m2 en una reforma basica y ${formatEur(cost.high.value)}/m2 en una reforma integral con materiales de gama alta, segun datos de presupuestos reales agregados por Habitissimo (referencia nacional, no especifica de ${city.name}).${totalProjectNote} Antes de pedir presupuestos a empresas de reforma en ${city.name}, usa el calculo por m2 de esta pagina como punto de partida para negociar y detectar presupuestos fuera de mercado, tanto por exceso como por defecto. Ten en cuenta ademas que el coste por m2 no suele ser lineal: baños y cocinas (con fontaneria, azulejado e instalaciones) cuestan bastante mas por metro cuadrado que salones o dormitorios, por lo que dos pisos del mismo tamano pueden tener presupuestos muy distintos segun cuantas estancias humedas incluyan.`;
 }
 
 export function buildReformaFaqs(city: City, cost: ReformaCost): FaqItem[] {
@@ -150,7 +150,7 @@ export function buildReformaFaqs(city: City, cost: ReformaCost): FaqItem[] {
 }
 
 export function buildCertificadoEnergeticoContent(city: City): string {
-  return `El certificado de eficiencia energetica es obligatorio para vender o alquilar cualquier vivienda en ${city.name}, y su gestion corresponde a un tecnico competente registrado en ${city.ccaa}. Con un precio medio de ${formatEur(city.price_per_sqm.value)} por metro cuadrado en ${city.name}, una calificacion energetica baja (E, F o G) puede traducirse en un descuento apreciable en la negociacion, ya que el comprador asumira un gasto energetico recurrente mayor durante anios. Usa el estimador de esta pagina para ver el impacto aproximado en la factura anual segun la etiqueta del inmueble que estas valorando en ${city.name}. El proceso de obtencion es sencillo: el tecnico visita la vivienda, mide sus caracteristicas constructivas (aislamiento, carpinterias, sistema de climatizacion) y emite el certificado, que despues debe registrarse en el organismo competente de ${city.ccaa} para tener validez legal.`;
+  return `El certificado de eficiencia energetica es obligatorio para vender o alquilar cualquier vivienda en ${city.name}, y su gestion corresponde a un tecnico competente registrado en ${city.ccaa}. Con un precio medio de ${formatEur(city.price_per_sqm.value)} por metro cuadrado en ${city.name}, una calificacion energetica baja (E, F o G) puede traducirse en un descuento apreciable en la negociacion, ya que el comprador asumira un gasto energetico recurrente mayor durante años. Usa el estimador de esta pagina para ver el impacto aproximado en la factura anual segun la etiqueta del inmueble que estas valorando en ${city.name}. El proceso de obtencion es sencillo: el tecnico visita la vivienda, mide sus caracteristicas constructivas (aislamiento, carpinterias, sistema de climatizacion) y emite el certificado, que despues debe registrarse en el organismo competente de ${city.ccaa} para tener validez legal.`;
 }
 
 export function buildCertificadoEnergeticoFaqs(city: City): FaqItem[] {
@@ -162,7 +162,7 @@ export function buildCertificadoEnergeticoFaqs(city: City): FaqItem[] {
     {
       question: "¿Cuanto tiempo es valido un certificado energetico?",
       answer:
-        "Diez anios desde su registro, salvo que se realicen reformas que cambien sustancialmente la eficiencia energetica de la vivienda.",
+        "Diez años desde su registro, salvo que se realicen reformas que cambien sustancialmente la eficiencia energetica de la vivienda.",
     },
     {
       question: `¿Que factores influyen mas en la calificacion energetica de un piso en ${city.name}?`,
@@ -172,7 +172,7 @@ export function buildCertificadoEnergeticoFaqs(city: City): FaqItem[] {
 }
 
 export function buildMudanzaContent(origin: City, destination: City, route: MudanzaRoute): string {
-  return `Una mudanza de ${origin.name} a ${destination.name} recorre unos ${route.distance_km} km, lo que situa el coste medio para un piso de tamano estandar (60-100 m2) en torno a ${formatEur(route.cost_medium.value)}. El precio final depende del volumen de mobiliario, si hay que desmontar y montar armarios, si el origen o el destino tienen dificil acceso (piso sin ascensor, calle estrecha) y de la epoca del anio: los fines de semana y los meses de verano suelen tener mayor demanda y precios ligeramente superiores. Para una mudanza de larga distancia como esta, la mayoria de empresas cobran un cargo fijo por el desplazamiento del camion mas un variable por volumen, por lo que suele compensar pedir presupuesto a 3 o 4 empresas distintas y comparar tanto el precio total como que es lo que incluye cada uno (embalaje, seguro, desmontaje).`;
+  return `Una mudanza de ${origin.name} a ${destination.name} recorre unos ${route.distance_km} km, lo que situa el coste medio para un piso de tamano estandar (60-100 m2) en torno a ${formatEur(route.cost_medium.value)}. El precio final depende del volumen de mobiliario, si hay que desmontar y montar armarios, si el origen o el destino tienen dificil acceso (piso sin ascensor, calle estrecha) y de la epoca del año: los fines de semana y los meses de verano suelen tener mayor demanda y precios ligeramente superiores. Para una mudanza de larga distancia como esta, la mayoria de empresas cobran un cargo fijo por el desplazamiento del camion mas un variable por volumen, por lo que suele compensar pedir presupuesto a 3 o 4 empresas distintas y comparar tanto el precio total como que es lo que incluye cada uno (embalaje, seguro, desmontaje).`;
 }
 
 export function buildMudanzaFaqs(origin: City, destination: City, route: MudanzaRoute): FaqItem[] {

@@ -18,9 +18,9 @@ export const metadata: Metadata = buildEditorialMetadata(
 
 /**
  * Esta es la UNICA URL indexable para la calculadora de hipoteca. Los
- * calculos por importe/interes/anios ocurren client-side (ver
+ * calculos por importe/interes/años ocurren client-side (ver
  * MortgageCalculator) y NUNCA generan una ruta nueva del tipo
- * /hipoteca/{pais}/{importe}/{interes}/{anios}, que crearia miles de
+ * /hipoteca/{pais}/{importe}/{interes}/{años}, que crearia miles de
  * paginas casi-duplicadas de bajo valor.
  */
 export default function HipotecaCalculadoraPage() {
@@ -33,7 +33,7 @@ export default function HipotecaCalculadoraPage() {
       <h1 className="text-3xl font-bold text-slate-900 mb-2">Calculadora de hipoteca</h1>
       <p className="text-slate-600 mb-6 max-w-2xl">
         Introduce el capital, el plazo y el tipo de interes para ver tu cuota mensual y la tabla
-        de amortizacion completa, anio a anio.
+        de amortizacion completa, año a año.
       </p>
 
       <AdSlot slotId="1212121212" placement="top" />

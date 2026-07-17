@@ -25,7 +25,7 @@ export default function MetodologiaPage() {
       <h2>Fuentes de datos que usamos</h2>
       <ul>
         <li><strong>Precio de venta y alquiler por m2:</strong> medias de anuncios activos en portales inmobiliarios (Idealista, Fotocasa), contrastadas cuando es posible con los informes trimestrales del INE y de Tinsa.</li>
-        <li><strong>Tipos de interes hipotecario:</strong> Euribor a 12 meses (Banco de Espana) y media de ofertas publicadas por bancos con actividad en Espana para el TIN a 20-30 anios.</li>
+        <li><strong>Tipos de interes hipotecario:</strong> Euribor a 12 meses (Banco de Espana) y media de ofertas publicadas por bancos con actividad en Espana para el TIN a 20-30 años.</li>
         <li><strong>Impuestos de compraventa (ITP/IVA/AJD):</strong> normativa autonomica y estatal vigente.</li>
         <li><strong>Coste de reforma y mudanza:</strong> medias de presupuestos sectoriales, marcadas siempre como estimacion.</li>
       </ul>

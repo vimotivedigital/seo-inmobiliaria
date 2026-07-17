@@ -21,7 +21,7 @@ const PADDING = { top: 16, right: 16, bottom: 28, left: 56 };
 
 /**
  * Grafico de lineas SVG sin dependencias externas. Pensado para series
- * temporales cortas (anios de amortizacion, coste acumulado comprar vs
+ * temporales cortas (años de amortizacion, coste acumulado comprar vs
  * alquilar) donde una libreria de charting completa seria sobrecarga
  * innecesaria para el peso de la pagina (Core Web Vitals).
  */
